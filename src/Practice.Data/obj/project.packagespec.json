@@ -1,0 +1,63 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Data\\Practice.Data.csproj",
+    "projectName": "Practice.Data",
+    "projectPath": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Data\\Practice.Data.csproj",
+    "outputPath": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Data\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice\\Practice.csproj": {
+            "projectPath": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice\\Practice.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[2.1.2, )"
+        },
+        "Microsoft.EntityFrameworkCore.Proxies": {
+          "target": "Package",
+          "version": "[2.1.2, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        },
+        "Npgsql.EntityFrameworkCore.PostgreSQL": {
+          "target": "Package",
+          "version": "[2.1.1.1, )"
+        },
+        "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+          "target": "Package",
+          "version": "[1.1.1, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

@@ -1,0 +1,57 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Web\\Practice.Web.csproj",
+    "projectName": "Practice.Web",
+    "projectPath": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Web\\Practice.Web.csproj",
+    "outputPath": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Web\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Model\\Practice.Model.csproj": {
+            "projectPath": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Model\\Practice.Model.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.AspNetCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.1, )",
+          "autoReferenced": true
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        },
+        "morelinq": {
+          "target": "Package",
+          "version": "[3.0.0, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

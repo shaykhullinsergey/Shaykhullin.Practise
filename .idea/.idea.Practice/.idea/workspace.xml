@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/Practice.Web/Startup.cs" line="25" mnemonic="9" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="98bee338-2e3f-40bd-94ce-b78d7cb95f72" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/Practice.Web/Startup.cs">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="450">
+                    <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+                    <folding>
+                      <marker date="1536087800550" expanded="true" signature="6:156" ph="..." />
+                      <marker date="1536087800550" expanded="true" signature="180:767" ph="{...}" />
+                      <marker date="1536087800550" expanded="true" signature="204:765" ph="{...}" />
+                      <marker date="1536087800550" expanded="true" signature="268:487" ph="{...}" />
+                      <marker date="1536087800550" expanded="true" signature="562:762" ph="{...}" />
+                      <marker date="1536087800550" expanded="true" signature="602:739" ph="{...}" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1989695243">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="46" />
+          <entry key="csproj" value="11" />
+          <entry key="sln" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="46" />
+          <entry key="Csproj" value="11" />
+          <entry key="Solution File" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="4794" />
+          <entry key="csproj" value="35" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="4794" />
+          <entry key="Csproj" value="35" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Practice.Data/Practice.Data.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Practice.Web/Controllers/ProfileController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
+              <folding>
+                <marker date="1536087847119" expanded="true" signature="6:61" ph="..." />
+                <marker date="1536087847119" expanded="true" signature="81:494" ph="{...}" />
+                <marker date="1536087847119" expanded="true" signature="157:492" ph="{...}" />
+                <marker date="1536087847119" expanded="true" signature="280:328" ph="{...}" />
+                <marker date="1536087847119" expanded="true" signature="443:489" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Practice.Web/Practice.Web.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Practice.Web/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1536084737496" expanded="true" signature="6:63" ph="..." />
+                <marker date="1536084737496" expanded="true" signature="87:351" ph="{...}" />
+                <marker date="1536084737496" expanded="true" signature="111:349" ph="{...}" />
+                <marker date="1536084737496" expanded="true" signature="155:208" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Practice.Web/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <folding>
+                <marker date="1536087800550" expanded="true" signature="6:156" ph="..." />
+                <marker date="1536087800550" expanded="true" signature="180:767" ph="{...}" />
+                <marker date="1536087800550" expanded="true" signature="204:765" ph="{...}" />
+                <marker date="1536087800550" expanded="true" signature="268:487" ph="{...}" />
+                <marker date="1536087800550" expanded="true" signature="562:762" ph="{...}" />
+                <marker date="1536087800550" expanded="true" signature="602:739" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileRequestViewModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+              <folding>
+                <marker date="1536086135841" expanded="true" signature="6:164" ph="..." />
+                <marker date="1536086135841" expanded="true" signature="184:618" ph="{...}" />
+                <marker date="1536086135841" expanded="true" signature="228:616" ph="{...}" />
+                <marker date="1536086135841" expanded="true" signature="387:613" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/CreateProfile/CreateProfileRequestViewModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+              <folding>
+                <marker date="1536085247679" expanded="true" signature="6:127" ph="..." />
+                <marker date="1536085247679" expanded="true" signature="147:619" ph="{...}" />
+                <marker date="1536085247679" expanded="true" signature="193:617" ph="{...}" />
+                <marker date="1536085247679" expanded="true" signature="348:614" ph="{...}" />
+                <marker date="1536085247679" expanded="true" signature="385:451" ph="{...}" />
+                <marker date="1536085247679" expanded="true" signature="573:609" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Practice.Data/Services/Service.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+              <folding>
+                <marker date="1536087607222" expanded="true" signature="6:190" ph="..." />
+                <marker date="1536087607222" expanded="true" signature="210:1118" ph="{...}" />
+                <marker date="1536087607222" expanded="true" signature="294:359" ph="{...}" />
+                <marker date="1536087607222" expanded="true" signature="438:1116" ph="{...}" />
+                <marker date="1536087607222" expanded="true" signature="521:548" ph="{...}" />
+                <marker date="1536087607222" expanded="true" signature="646:691" ph="{...}" />
+                <marker date="1536087607222" expanded="true" signature="734:769" ph="{...}" />
+                <marker date="1536087607222" expanded="true" signature="975:1014" ph="{...}" />
+                <marker date="1536087607222" expanded="true" signature="1052:1113" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5322196E-EC4D-4A49-A05F-63EFDE8F0BE4/5a/5984a222/Thread.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="162" column="8" selection-start-line="162" selection-start-column="8" selection-end-line="162" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileResponseViewModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+              <folding>
+                <marker date="1536086938986" expanded="true" signature="6:118" ph="..." />
+                <marker date="1536086938986" expanded="true" signature="138:569" ph="{...}" />
+                <marker date="1536086938986" expanded="true" signature="183:567" ph="{...}" />
+                <marker date="1536086938986" expanded="true" signature="406:564" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Practice/Chapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice/Lecture.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Web/Controllers/ProfileController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Web/Controllers/LectureController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Web/Controllers/PracticeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Data/ServiceExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Web/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Web/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileLectureViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Data/Services/QuizService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Data/Services/QuestionService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadLecture/ReadLectureViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice/Profile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Data/Services/ProfileService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Data/Services/LectureService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileRequestViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Data/Services/ChapterService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileResponseViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Data/PracticeContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Data/Services/AnswerService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Data/Services/Service.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/CreateProfile/CreateProfileResponseViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5322196E-EC4D-4A49-A05F-63EFDE8F0BE4/5a/5984a222/Thread.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/CreateProfile/CreateProfileRequestViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice/Answer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice/Question.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice/Quiz.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Practice.Model/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Practice/Class1.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/Class1.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Model/Class1.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/Class1.cs" />
+        <option value="$PROJECT_DIR$/src/Practice/Practice.csproj" />
+        <option value="$PROJECT_DIR$/src/Practice.Model/Practice.Model.csproj" />
+        <option value="$PROJECT_DIR$/src/Practice/Lecture.cs" />
+        <option value="$PROJECT_DIR$/src/Practice/Chapter.cs" />
+        <option value="$PROJECT_DIR$/src/Practice/Quiz.cs" />
+        <option value="$PROJECT_DIR$/src/Practice/Question.cs" />
+        <option value="$PROJECT_DIR$/src/Practice/Profile.cs" />
+        <option value="$PROJECT_DIR$/src/Practice/Answer.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/Services/AnswerService.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/Services/ChapterService.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/Services/lectureService.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/Services/LectureService.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/Services/ProfileService.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/Services/QuestionService.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/Services/QuizService.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/PracticeDataModule.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/Program.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/ServiceExtensions.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/ViewModels/CreateProfile/CreateProfileViewModel.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/ViewModels/CreateProfile/CreateProfileResponseViewModel.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/ViewModels/CreateProfile/CreateProfileRequestViewModel.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileViewModel.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/Controllers/PracticeController.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileRequestViewModel.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/Practice.Web.csproj" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadLecture/ReadLectureViewModel.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileResponseViewModel.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileLectureViewModel.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/Controllers/LectureController.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/PracticeContext.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/Services/Service.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Data/Practice.Data.csproj" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/Startup.cs" />
+        <option value="$PROJECT_DIR$/src/Practice.Web/Controllers/ProfileController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="59" />
+    <option name="y" value="277" />
+    <option name="width" value="1936" />
+    <option name="height" value="1025" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Practice.Data" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Practice.Data" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Services" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Practice.Model" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Practice.Web" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Practice.Web" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Practice.Web" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ViewModels" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Practice.Web" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ViewModels" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="CreateProfile" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Practice.Web" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ViewModels" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ReadLecture" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Practice" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Practice.Web" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ViewModels" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ReadProfile" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="CreateProfi&#9;FILE&#9;file://C:/Users/shaykhullin/Desktop/Term5/term5.practice/src/Practice.Web/ViewModels/CreateProfile/CreateProfileRequestViewModel.cs" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.src\Practice.Web">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="src\Practice.Web" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/src/Practice.Web/bin/Debug/netcoreapp2.1/Practice.Web.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/Practice.Web" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/src/Practice.Web/Practice.Web.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.Default" />
+      <item itemvalue=".NET Project.src\Practice.Web" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.src\Practice.Web" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="1" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" internal_type="SLIDING" order="1" type="SLIDING" weight="0.32921812" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32828283" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Unit Tests" internal_type="SLIDING" order="8" type="SLIDING" weight="0.32979852" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="NuGet" order="11" weight="0.32929292" />
+      <window_info anchor="bottom" id="REST Client" order="12" weight="0.32979852" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32921812" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.32828283" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Project" internal_type="SLIDING" order="4" type="SLIDING" weight="0.20735608" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileRequestViewModel.cs</url>
+          <line>15</line>
+          <properties documentPath="$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileRequestViewModel.cs" initialLine="15">
+            <startOffsets>
+              <option value="395" />
+            </startOffsets>
+            <endOffsets>
+              <option value="505" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Practice.Web/Controllers/ProfileController.cs</url>
+          <line>17</line>
+          <properties documentPath="$PROJECT_DIR$/src/Practice.Web/Controllers/ProfileController.cs" initialLine="17">
+            <startOffsets>
+              <option value="451" />
+            </startOffsets>
+            <endOffsets>
+              <option value="485" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Practice.Web/ViewModels/CreateProfile/CreateProfileRequestViewModel.cs</url>
+          <line>20</line>
+          <properties documentPath="$PROJECT_DIR$/src/Practice.Web/ViewModels/CreateProfile/CreateProfileRequestViewModel.cs" initialLine="20">
+            <startOffsets>
+              <option value="457" />
+            </startOffsets>
+            <endOffsets>
+              <option value="523" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Practice.Model/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/Class1.cs" />
+    <entry file="file://$PROJECT_DIR$/src/Practice/Class1.cs" />
+    <entry file="file://$PROJECT_DIR$/Practice.sln">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/Practice.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/Quiz.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/Question.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/Answer.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/Profile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Data/Class1.cs" />
+    <entry file="file://$PROJECT_DIR$/src/Practice.Model/Practice.Model.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Data/Services/AnswerService.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Data/Services/ChapterService.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Data/Services/LectureService.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Data/Services/ProfileService.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Data/Services/QuestionService.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Data/PracticeDataModule.cs" />
+    <entry file="file://$PROJECT_DIR$/src/Practice.Data/Services/QuizService.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/CreateProfile/CreateProfileResponseViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <marker date="1536085093412" expanded="true" signature="102:179" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/Lecture.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding>
+            <marker date="1536086727573" expanded="true" signature="6:85" ph="..." />
+            <marker date="1536086727573" expanded="true" signature="105:444" ph="{...}" />
+            <marker date="1536086727573" expanded="true" signature="150:442" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/Chapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding>
+            <marker date="1536083664339" expanded="true" signature="71:397" ph="{...}" />
+            <marker date="1536083664339" expanded="true" signature="116:395" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadLecture/ReadLectureViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding>
+            <marker date="1536086898863" expanded="true" signature="6:233" ph="..." />
+            <marker date="1536086898863" expanded="true" signature="253:1916" ph="{...}" />
+            <marker date="1536086898863" expanded="true" signature="290:1010" ph="{...}" />
+            <marker date="1536086898863" expanded="true" signature="642:1007" ph="{...}" />
+            <marker date="1536086898863" expanded="true" signature="1054:1300" ph="{...}" />
+            <marker date="1536086898863" expanded="true" signature="1239:1297" ph="{...}" />
+            <marker date="1536086898863" expanded="true" signature="1345:1715" ph="{...}" />
+            <marker date="1536086898863" expanded="true" signature="1566:1712" ph="{...}" />
+            <marker date="1536086898863" expanded="true" signature="1758:1914" ph="{...}" />
+            <marker date="1536086898863" expanded="true" signature="1880:1911" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileLectureViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding>
+            <marker date="1536086959660" expanded="true" signature="55:330" ph="{...}" />
+            <marker date="1536086959660" expanded="true" signature="99:328" ph="{...}" />
+            <marker date="1536086959660" expanded="true" signature="150:207" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/Controllers/LectureController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <marker date="1536087093963" expanded="true" signature="6:61" ph="..." />
+            <marker date="1536087093963" expanded="true" signature="81:337" ph="{...}" />
+            <marker date="1536087093963" expanded="true" signature="157:335" ph="{...}" />
+            <marker date="1536087093963" expanded="true" signature="227:332" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Data/PracticeContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding>
+            <marker date="1536087344995" expanded="true" signature="56:517" ph="{...}" />
+            <marker date="1536087344995" expanded="true" signature="100:515" ph="{...}" />
+            <marker date="1536087344995" expanded="true" signature="130:138" ph="{...}" />
+            <marker date="1536087344995" expanded="true" signature="223:231" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Data/ServiceExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <marker date="1536084800277" expanded="true" signature="67:537" ph="{...}" />
+            <marker date="1536084800277" expanded="true" signature="108:535" ph="{...}" />
+            <marker date="1536084800277" expanded="true" signature="182:532" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/Controllers/PracticeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding>
+            <marker date="1536085371684" expanded="true" signature="6:45" ph="..." />
+            <marker date="1536085371684" expanded="true" signature="65:294" ph="{...}" />
+            <marker date="1536085371684" expanded="true" signature="114:292" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Data/Services/Service.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <marker date="1536087607222" expanded="true" signature="6:190" ph="..." />
+            <marker date="1536087607222" expanded="true" signature="210:1118" ph="{...}" />
+            <marker date="1536087607222" expanded="true" signature="294:359" ph="{...}" />
+            <marker date="1536087607222" expanded="true" signature="438:1116" ph="{...}" />
+            <marker date="1536087607222" expanded="true" signature="521:548" ph="{...}" />
+            <marker date="1536087607222" expanded="true" signature="646:691" ph="{...}" />
+            <marker date="1536087607222" expanded="true" signature="734:769" ph="{...}" />
+            <marker date="1536087607222" expanded="true" signature="975:1014" ph="{...}" />
+            <marker date="1536087607222" expanded="true" signature="1052:1113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1536084737496" expanded="true" signature="6:63" ph="..." />
+            <marker date="1536084737496" expanded="true" signature="87:351" ph="{...}" />
+            <marker date="1536084737496" expanded="true" signature="111:349" ph="{...}" />
+            <marker date="1536084737496" expanded="true" signature="155:208" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileResponseViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding>
+            <marker date="1536086938986" expanded="true" signature="6:118" ph="..." />
+            <marker date="1536086938986" expanded="true" signature="138:569" ph="{...}" />
+            <marker date="1536086938986" expanded="true" signature="183:567" ph="{...}" />
+            <marker date="1536086938986" expanded="true" signature="406:564" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5322196E-EC4D-4A49-A05F-63EFDE8F0BE4/5a/5984a222/Thread.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="162" column="8" selection-start-line="162" selection-start-column="8" selection-end-line="162" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/ReadProfile/ReadProfileRequestViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <marker date="1536086135841" expanded="true" signature="6:164" ph="..." />
+            <marker date="1536086135841" expanded="true" signature="184:618" ph="{...}" />
+            <marker date="1536086135841" expanded="true" signature="228:616" ph="{...}" />
+            <marker date="1536086135841" expanded="true" signature="387:613" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Data/Practice.Data.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <marker date="1536087800550" expanded="true" signature="6:156" ph="..." />
+            <marker date="1536087800550" expanded="true" signature="180:767" ph="{...}" />
+            <marker date="1536087800550" expanded="true" signature="204:765" ph="{...}" />
+            <marker date="1536087800550" expanded="true" signature="268:487" ph="{...}" />
+            <marker date="1536087800550" expanded="true" signature="562:762" ph="{...}" />
+            <marker date="1536087800550" expanded="true" signature="602:739" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/ViewModels/CreateProfile/CreateProfileRequestViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <marker date="1536085247679" expanded="true" signature="6:127" ph="..." />
+            <marker date="1536085247679" expanded="true" signature="147:619" ph="{...}" />
+            <marker date="1536085247679" expanded="true" signature="193:617" ph="{...}" />
+            <marker date="1536085247679" expanded="true" signature="348:614" ph="{...}" />
+            <marker date="1536085247679" expanded="true" signature="385:451" ph="{...}" />
+            <marker date="1536085247679" expanded="true" signature="573:609" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/Controllers/ProfileController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
+          <folding>
+            <marker date="1536087847119" expanded="true" signature="6:61" ph="..." />
+            <marker date="1536087847119" expanded="true" signature="81:494" ph="{...}" />
+            <marker date="1536087847119" expanded="true" signature="157:492" ph="{...}" />
+            <marker date="1536087847119" expanded="true" signature="280:328" ph="{...}" />
+            <marker date="1536087847119" expanded="true" signature="443:489" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice.Web/Practice.Web.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

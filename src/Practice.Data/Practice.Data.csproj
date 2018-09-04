@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp2.1</TargetFramework>
+		<RootNamespace>Practice</RootNamespace>
+		<LangVersion>7.3</LangVersion>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Practice\Practice.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.2" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.1.2" />
+	  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.1.1" />
+	  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.1" />
+	</ItemGroup>
+
+</Project>
