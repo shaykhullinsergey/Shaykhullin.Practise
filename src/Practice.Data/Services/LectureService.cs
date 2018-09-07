@@ -7,7 +7,7 @@ namespace Practice
 	
 	internal class LectureService : Service<Lecture>, ILectureService
 	{
-		public LectureService(PracticeContext context) : base(context.Lectures)
+		public LectureService(PracticeDatabaseContext databaseContext) : base(databaseContext.Lectures)
 		{
 		}
 	}

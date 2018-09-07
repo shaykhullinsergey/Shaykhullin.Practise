@@ -6,7 +6,7 @@ namespace Practice
 	
 	internal class ProfileService : Service<Profile>, IProfileService
 	{
-		public ProfileService(PracticeContext context) : base(context.Profiles)
+		public ProfileService(PracticeDatabaseContext databaseContext) : base(databaseContext.Profiles)
 		{
 		}
 	}

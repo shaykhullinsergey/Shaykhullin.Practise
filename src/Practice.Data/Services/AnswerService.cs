@@ -6,7 +6,7 @@ namespace Practice
 	
 	internal class AnswerService : Service<Answer>, IAnswerService
 	{
-		public AnswerService(PracticeContext context) : base(context.Answers)
+		public AnswerService(PracticeDatabaseContext databaseContext) : base(databaseContext.Answers)
 		{
 		}
 	}

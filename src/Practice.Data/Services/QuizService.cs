@@ -6,7 +6,7 @@ namespace Practice
 	
 	internal class QuizService : Service<Quiz>, IQuizService
 	{
-		public QuizService(PracticeContext context) : base(context.Quizzes)
+		public QuizService(PracticeDatabaseContext databaseContext) : base(databaseContext.Quizzes)
 		{
 		}
 	}

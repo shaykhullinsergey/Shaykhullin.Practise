@@ -7,7 +7,7 @@ namespace Practice
 	
 	internal class QuestionService : Service<Question>, IQuestionService
 	{
-		public QuestionService(PracticeContext context) : base(context.Questions)
+		public QuestionService(PracticeDatabaseContext databaseContext) : base(databaseContext.Questions)
 		{
 		}
 	}

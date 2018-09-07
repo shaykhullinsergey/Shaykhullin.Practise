@@ -15,7 +15,7 @@ namespace Practice
 		public int ProfileId { get; set; }
 
 		[Column("result")]
-		public int Result { get; set; }
+		public int? Result { get; set; }
 		
 		public virtual Profile Profile { get; set; }
 		public virtual Lecture Lecture { get; set; }

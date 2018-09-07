@@ -9,6 +9,9 @@ namespace Practice
 	{
 		[DataMember(Name = "name")]
 		public string Name { get; set; }
+
+		[DataMember(Name = "group")]
+		public string Group { get; set; }
 		
 		[DataMember(Name = "lectures")]
 		public ICollection<ReadProfileLectureViewModel> Lectures { get; set; }
@@ -16,6 +19,7 @@ namespace Practice
 		public async Task Load(Profile profile)
 		{
 			Name = profile.Name;
+			Group = profile.Group;
 			
 			Lectures = profile.Quizzes
 				.OrderBy(x => x.Id)

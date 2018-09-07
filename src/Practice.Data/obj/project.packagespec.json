@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Data\\Practice.Data.csproj",
+    "projectUniqueName": "/home/shaykhullin/Git/term5.practice/src/Practice.Data/Practice.Data.csproj",
     "projectName": "Practice.Data",
-    "projectPath": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Data\\Practice.Data.csproj",
-    "outputPath": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Data\\obj\\",
+    "projectPath": "/home/shaykhullin/Git/term5.practice/src/Practice.Data/Practice.Data.csproj",
+    "outputPath": "/home/shaykhullin/Git/term5.practice/src/Practice.Data/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.1"
@@ -15,8 +15,8 @@
     "frameworks": {
       "netcoreapp2.1": {
         "projectReferences": {
-          "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice\\Practice.csproj": {
-            "projectPath": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice\\Practice.csproj"
+          "/home/shaykhullin/Git/term5.practice/src/Practice/Practice.csproj": {
+            "projectPath": "/home/shaykhullin/Git/term5.practice/src/Practice/Practice.csproj"
           }
         }
       }
@@ -51,6 +51,14 @@
         "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
           "target": "Package",
           "version": "[1.1.1, )"
+        },
+        "Shelter.Configuration": {
+          "target": "Package",
+          "version": "[1.1.0, )"
+        },
+        "Shelter.Module": {
+          "target": "Package",
+          "version": "[1.1.0, )"
         }
       },
       "imports": [

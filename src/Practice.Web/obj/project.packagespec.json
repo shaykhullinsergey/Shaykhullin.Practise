@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Web\\Practice.Web.csproj",
+    "projectUniqueName": "/home/shaykhullin/Git/term5.practice/src/Practice.Web/Practice.Web.csproj",
     "projectName": "Practice.Web",
-    "projectPath": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Web\\Practice.Web.csproj",
-    "outputPath": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Web\\obj\\",
+    "projectPath": "/home/shaykhullin/Git/term5.practice/src/Practice.Web/Practice.Web.csproj",
+    "outputPath": "/home/shaykhullin/Git/term5.practice/src/Practice.Web/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.1"
@@ -15,8 +15,8 @@
     "frameworks": {
       "netcoreapp2.1": {
         "projectReferences": {
-          "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Model\\Practice.Model.csproj": {
-            "projectPath": "C:\\Users\\shaykhullin\\Desktop\\Term5\\term5.practice\\src\\Practice.Model\\Practice.Model.csproj"
+          "/home/shaykhullin/Git/term5.practice/src/Practice.Data/Practice.Data.csproj": {
+            "projectPath": "/home/shaykhullin/Git/term5.practice/src/Practice.Data/Practice.Data.csproj"
           }
         }
       }
@@ -36,11 +36,31 @@
           "version": "[2.1.1, )",
           "autoReferenced": true
         },
+        "Microsoft.AspNetCore.ResponseCaching": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
+        "Microsoft.AspNetCore.ResponseCompression": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",
           "version": "[2.1.0, )",
           "autoReferenced": true
+        },
+        "Shelter.DateTime": {
+          "target": "Package",
+          "version": "[1.1.0, )"
+        },
+        "Shelter.Routing": {
+          "target": "Package",
+          "version": "[1.1.0, )"
+        },
+        "Shelter.Validation": {
+          "target": "Package",
+          "version": "[1.1.0, )"
         },
         "morelinq": {
           "target": "Package",

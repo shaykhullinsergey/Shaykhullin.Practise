@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "4c408c24937d4b31beedb493d3dad966316ec370"
+    "signature": "f571bf59541bbfa9dd6cee637196f238c5f882b0"
   },
   "compilationOptions": {
     "defines": [
@@ -25,8 +25,13 @@
       "Practice.Web/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.1",
+          "Microsoft.AspNetCore.ResponseCaching": "2.1.1",
+          "Microsoft.AspNetCore.ResponseCompression": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
-          "Practice.Model": "1.0.0",
+          "Practice.Data": "1.0.0",
+          "Shelter.DateTime": "1.1.0",
+          "Shelter.Routing": "1.1.0",
+          "Shelter.Validation": "1.1.0",
           "morelinq": "3.0.0"
         },
         "runtime": {
@@ -384,6 +389,130 @@
           "lib/netstandard1.0/Remotion.Linq.dll": {}
         }
       },
+      "Shelter.Component/1.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.1.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Shelter.Component.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Shelter.Component.dll": {}
+        }
+      },
+      "Shelter.Configuration/1.1.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.Binder": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Shelter.Component": "1.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Shelter.Configuration.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Shelter.Configuration.dll": {}
+        }
+      },
+      "Shelter.DateTime/1.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Shelter.DateTime.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Shelter.DateTime.dll": {}
+        }
+      },
+      "Shelter.Module/1.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Shelter.Module.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Shelter.Module.dll": {}
+        }
+      },
+      "Shelter.Role/1.1.0": {
+        "dependencies": {
+          "Shelter.Component": "1.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Shelter.Role.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Shelter.Role.dll": {}
+        }
+      },
+      "Shelter.Routing/1.1.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "2.1.1",
+          "Microsoft.AspNetCore.Mvc.Core": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Shelter.Component": "1.1.0",
+          "Shelter.Role": "1.1.0",
+          "Shelter.Serializer": "1.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Shelter.Routing.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Shelter.Routing.dll": {}
+        }
+      },
+      "Shelter.Serializer/1.1.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Formatters.Json": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.Options": "2.1.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Shelter.Serializer.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Shelter.Serializer.dll": {}
+        }
+      },
+      "Shelter.Validation/1.1.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.1.1",
+          "Shelter.Component": "1.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Shelter.Validation.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Shelter.Validation.dll": {}
+        }
+      },
       "System.Collections.Immutable/1.5.0": {},
       "System.ComponentModel/4.3.0": {
         "dependencies": {
@@ -480,24 +609,15 @@
           "Microsoft.EntityFrameworkCore.Proxies": "2.1.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "2.1.1.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.1",
-          "Practice": "1.0.0"
+          "Practice": "1.0.0",
+          "Shelter.Configuration": "1.1.0",
+          "Shelter.Module": "1.1.0"
         },
         "runtime": {
           "Practice.Data.dll": {}
         },
         "compile": {
           "Practice.Data.dll": {}
-        }
-      },
-      "Practice.Model/1.0.0": {
-        "dependencies": {
-          "Practice.Data": "1.0.0"
-        },
-        "runtime": {
-          "Practice.Model.dll": {}
-        },
-        "compile": {
-          "Practice.Model.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3498,6 +3618,62 @@
       "path": "remotion.linq/2.2.0",
       "hashPath": "remotion.linq.2.2.0.nupkg.sha512"
     },
+    "Shelter.Component/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oS7LIB8pTJC4CQxo9SRvy2Neh3VH5uNP7ielreLkDLgN1WXTkdgnZywotRZWK1yNaY0GhGN5dX2pgjnOAuAH6Q==",
+      "path": "shelter.component/1.1.0",
+      "hashPath": "shelter.component.1.1.0.nupkg.sha512"
+    },
+    "Shelter.Configuration/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w9yXgFON6QXtyiZDzYN3Wt0ZOdVddJg8ii9QM4G1/uaP6cDs8o2yOzeGVnZw10f3b2Q1ovDTEwxBrUjrHNWCfg==",
+      "path": "shelter.configuration/1.1.0",
+      "hashPath": "shelter.configuration.1.1.0.nupkg.sha512"
+    },
+    "Shelter.DateTime/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9NKGOqUv702bjncUUjvxJKQrTMb1XGO6qopN/4K+RiA/3GlTOTrEUOOmgbzUfdWrBhFKpLrbpaHSGrSU0P8Qew==",
+      "path": "shelter.datetime/1.1.0",
+      "hashPath": "shelter.datetime.1.1.0.nupkg.sha512"
+    },
+    "Shelter.Module/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RFRF+pL38pac1QCPuF0llNQqMX/OuGw9DJvvDYDAs9vOHy7WcORo1MsLnU3vGFOxCrz3Dz1bUIeVoFYFi3c5VQ==",
+      "path": "shelter.module/1.1.0",
+      "hashPath": "shelter.module.1.1.0.nupkg.sha512"
+    },
+    "Shelter.Role/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q2nOpgWH/q6b/XdOEGf2t4CnAiU9jJNwMBL1pGxCMn5i0tCq9uPX6B64mRUCMkmRqBz1hWMzmBxu0mXWuFcQjg==",
+      "path": "shelter.role/1.1.0",
+      "hashPath": "shelter.role.1.1.0.nupkg.sha512"
+    },
+    "Shelter.Routing/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n9Tqx5HMxK7HzSlEy1Dv1vdqxOhzZ18L/Wd8Z/cNtglCSF3YL5W0lYVwOmWt/l8MOOpqAEnX9qvPW023th/UPg==",
+      "path": "shelter.routing/1.1.0",
+      "hashPath": "shelter.routing.1.1.0.nupkg.sha512"
+    },
+    "Shelter.Serializer/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A+qTCplsi2wMUsU5FQtU76M3CbFcJnOmEaThkeAm34GSjX0fH2lgkiFdcIXZhgEYTIm7fcYQFOkoRVEATavFGw==",
+      "path": "shelter.serializer/1.1.0",
+      "hashPath": "shelter.serializer.1.1.0.nupkg.sha512"
+    },
+    "Shelter.Validation/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-af3iXFjtIFEdLCG7e5JDK1fcxJ0aXN/XGqtHi/wTw211EEtc7QBN0HPutl3apwPvAoiN66t27KuI54Gd/+V13A==",
+      "path": "shelter.validation/1.1.0",
+      "hashPath": "shelter.validation.1.1.0.nupkg.sha512"
+    },
     "System.Collections.Immutable/1.5.0": {
       "type": "package",
       "serviceable": true,
@@ -3560,11 +3736,6 @@
       "sha512": ""
     },
     "Practice.Data/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Practice.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

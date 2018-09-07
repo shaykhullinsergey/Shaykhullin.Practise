@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Shelter;
 
 namespace Practice.Web
 {
@@ -9,26 +8,22 @@ namespace Practice.Web
 	{
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddMvc();
+			services.AddModule<PracticeDataModule>();
+			services.AddModule<PracticeWebModule>();
 			
-			services.AddDbContext<PracticeContext>(
-				options => options
-					.UseLazyLoadingProxies()
-					.UseInMemoryDatabase(nameof(PracticeContext)));
-				
-			services.AddDataServices();
+			services.ConfigureComponents();
 		}
 
-		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+		public void Configure(IApplicationBuilder app)
 		{
-			app.Use(async (context, next) =>
-			{
-				await next();
-				
-				await context.RequestServices
-					.GetRequiredService<PracticeContext>()
-					.SaveChangesAsync();
-			});
+			app.ApplicationServices.ConfigureComponents();
+			
+//			app.UseResponseCompression();
+//			app.UseResponseCaching();
+			app.UseValidation();
+			
+			app.UseMiddleware<SaveChangesMiddleware>();
+			
 			app.UseMvc();
 		}
 	}

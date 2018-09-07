@@ -2,13 +2,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Practice
 {
-	public class PracticeContext : DbContext
+	public class PracticeDatabaseContext : DbContext
 	{
-		public PracticeContext()
+		public PracticeDatabaseContext()
 		{
 		}
 
-		public PracticeContext(DbContextOptions<PracticeContext> options) : base(options)
+		public PracticeDatabaseContext(DbContextOptions<PracticeDatabaseContext> options) : base(options)
 		{
 		}
 		

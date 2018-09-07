@@ -27,6 +27,7 @@ namespace Practice
 			Title = lecture.Title;
 
 			Chapters = lecture.Chapters
+				.OrderBy(x => x.Id)
 				.Select(x => new ReadLectureChapterViewModel(x))
 				.ToList();
 
@@ -55,6 +56,9 @@ namespace Practice
 	
 	public class ReadLectureQuestionViewModel
 	{
+		[DataMember(Name = "id")]
+		public int Id { get; set; }
+		
 		[DataMember(Name = "text")]
 		public string Text { get; }
 
@@ -63,6 +67,7 @@ namespace Practice
 
 		public ReadLectureQuestionViewModel(Question question)
 		{
+			Id = question.Id;
 			Text = question.Text;
 
 			Answers = question.Answers
@@ -74,11 +79,15 @@ namespace Practice
 	
 	public class ReadLectureAnswerViewModel
 	{
+		[DataMember(Name = "id")]
+		public int Id { get; set; }
+		
 		[DataMember(Name = "text")]
 		public string Text { get; set; }
 		
 		public ReadLectureAnswerViewModel(Answer answer)
 		{
+			Id = answer.Id;
 			Text = answer.Text;
 		}
 	}

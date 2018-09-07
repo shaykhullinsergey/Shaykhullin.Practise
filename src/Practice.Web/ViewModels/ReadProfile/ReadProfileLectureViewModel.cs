@@ -14,6 +14,6 @@ namespace Practice
 		public int Id { get; }
 		
 		[DataMember(Name = "result")]
-		public int Result { get; }
+		public int? Result { get; }
 	}
 }

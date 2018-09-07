@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Practice
 {
 	[Controller]
-	public class PracticeController
+	public abstract class PracticeController
 	{
 		protected IServiceProvider Provider => ControllerContext.HttpContext.RequestServices;
 		

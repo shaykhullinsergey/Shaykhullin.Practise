@@ -1,12 +1,10 @@
+using System.Diagnostics.Contracts;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Practice
 {
-	[Route("lectures")]
 	public class LectureController : PracticeController
 	{
-		[HttpGet]
 		public async Task<ReadLectureViewModel> Read(int id)
 		{
 			var model = new ReadLectureViewModel();
@@ -14,6 +12,14 @@ namespace Practice
 			await model.Load(Provider, id);
 
 			return model;
+		}
+	}
+	
+	public class QuizController : PracticeController
+	{
+		public async Task<QuizResponseViewModel> Result(string session, QuizRequestViewModel model)
+		{
+			return await model.Result(Provider, session);
 		}
 	}
 }
