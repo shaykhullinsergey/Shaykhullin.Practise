@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  practice:
+    image: practice
+    build: 
+      context: .
+      dockerfile: src/Practice.Web/Dockerfile
+    ports:
+      - 4000:80
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
