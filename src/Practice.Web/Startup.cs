@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Practice.Web
+namespace Practice
 {
 	public class Startup
 	{

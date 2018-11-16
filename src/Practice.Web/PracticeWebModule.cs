@@ -1,5 +1,4 @@
 using Shelter;
-using Practice.Web;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Practice
@@ -10,7 +9,7 @@ namespace Practice
 		{
 			services.AddMvc();
 			services.AddDateTime<UtcDateTime>();
-			services.AddConfiguration<PracticeConfiguration>();
+			// services.AddConfiguration<PracticeConfiguration>();
 			services.AddRouter<PracticeRouterComponent>();
 			services.AddValidation<PracticeValidationComponent>();
 

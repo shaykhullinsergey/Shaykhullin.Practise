@@ -1,7 +1,12 @@
-﻿using Microsoft.AspNetCore;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Practice.Web
+namespace Practice
 {
 	public class Program
 	{
@@ -12,6 +17,7 @@ namespace Practice.Web
 
 		public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
 			WebHost.CreateDefaultBuilder(args)
+				.AddConfiguration<PracticeConfiguration>()
 				.UseStartup<Startup>();
 	}
 }

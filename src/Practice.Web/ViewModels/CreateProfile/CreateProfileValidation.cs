@@ -38,6 +38,7 @@ namespace Practice
 			TooLongName = Register(() => "Слишком длинное имя");
 			GroupMustBeSet = Register(() => "Укажите свою группу");
 			GroupPattern = Register(() => "Название группы должно быть в формате 'ХХХХ-11-11'");
+			QuestionsMustBeUnique = Register(() => "Вопросы должны быть уникальными");
 		}
 
 		public ValidationMessage NameMustBeSet { get; }
@@ -45,5 +46,6 @@ namespace Practice
 		public ValidationMessage TooLongName { get; }
 		public ValidationMessage GroupMustBeSet { get; }
 		public ValidationMessage GroupPattern { get; }
+		public ValidationMessage QuestionsMustBeUnique { get; }
 	}
 }

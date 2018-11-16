@@ -14,12 +14,4 @@ namespace Practice
 			return model;
 		}
 	}
-	
-	public class QuizController : PracticeController
-	{
-		public async Task<QuizResponseViewModel> Result(string session, QuizRequestViewModel model)
-		{
-			return await model.Result(Provider, session);
-		}
-	}
 }

@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Shelter;
 
 namespace Practice
 {
@@ -28,6 +29,12 @@ namespace Practice
 				.FirstAsync(x => x.Profile == profile && x.Lecture == lecture);
 
 			var result = 0;
+
+			var validationContext = provider.GetRequiredService<IValidationContext>();
+			
+			validationContext.Validate("")
+				.If(() => Questions.Select(x => x.QuestionId).Distinct().Count() != Questions.Count)
+				.Throw<CreateProfileRequestValidationSection>(c => c.QuestionsMustBeUnique);
 
 			foreach (var question in lecture.Questions)
 			{
