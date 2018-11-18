@@ -18,6 +18,7 @@ namespace Practice
 				var content = JsonConvert.SerializeObject(e.Data["ShelterData"]);
 					
 				context.Response.StatusCode = (int)e.Data["ShelterStatusCode"];
+				context.Response.ContentType = "application/json";
 				await context.Response.WriteAsync(content);
 			}
 		}
