@@ -19,7 +19,7 @@ services:
       dockerfile: ./src/PostgreSQL/Dockerfile
     restart: always
     ports:
-      - 5000:5432
+      - 4001:5432
     volumes:
       - ./src/PostgreSQL/db:/var/lib/postgresql/data
     environment:
