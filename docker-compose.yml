@@ -11,3 +11,18 @@ services:
       - 4000:80
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
+
+  practicedb:
+    image: practicedb
+    build:
+      context: .
+      dockerfile: src/PostgreSQL/Dockerfile
+    restart: always
+    ports:
+      - 5000:5432
+    volumes:
+      - src/PostgreSQL/db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: practice
+      POSTGRES_PASSWORD: practice
+      POSTGRES_DB: practicedb

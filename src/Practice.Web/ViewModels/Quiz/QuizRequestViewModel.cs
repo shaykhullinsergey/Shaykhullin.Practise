@@ -28,14 +28,16 @@ namespace Practice
 			var quiz = await provider.GetRequiredService<IQuizService>()
 				.FirstAsync(x => x.Profile == profile && x.Lecture == lecture);
 
-			var result = 0;
-
 			var validationContext = provider.GetRequiredService<IValidationContext>();
 			
-			validationContext.Validate("")
+			validationContext.Validate()
 				.If(() => Questions.Select(x => x.QuestionId).Distinct().Count() != Questions.Count)
 				.Throw<CreateProfileRequestValidationSection>(c => c.QuestionsMustBeUnique);
 
+			var results = new bool[Questions.Count];
+
+			var count = 0;
+			
 			foreach (var question in lecture.Questions)
 			{
 				var input = Questions.FirstOrDefault(x => x.QuestionId == question.Id);
@@ -44,9 +46,13 @@ namespace Practice
 				{
 					var answer = question.Answers.First(x => x.Id == input.AnswerId);
 					
-					result += answer.Correct ? 1 : 0;
+					results[count] = answer.Correct;
 				}
+
+				count++;
 			}
+
+			var result = results.Count(x => x);
 			
 			if (quiz.Result == null || quiz.Result < result)
 			{
@@ -68,9 +74,20 @@ namespace Practice
 				}
 			}
 			
+			var statistics = await provider
+				.GetRequiredService<IQuizService>()
+				.Where(x => x.Lecture == lecture)
+				.GroupBy(x => x.Result)
+				.OrderBy(x => x.Key)
+				.Where(x => x.Key != null)
+				.ToDictionaryAsync(
+					x => x.Key.Value,
+					x => x.Count());
+			
 			return new QuizResponseViewModel
 			{
-				Result = result
+				Results = results,
+				Statistics = statistics
 			};
 		}
 	}
@@ -86,6 +103,11 @@ namespace Practice
 	
 	public class QuizResponseViewModel
 	{
-		public int Result { get; set; }
+		
+		[DataMember(Name = "results")]
+		public ICollection<bool> Results { get; set; }
+		
+		[DataMember(Name = "statistics")]
+		public IDictionary<int, int> Statistics { get; set; }
 	}
 }
