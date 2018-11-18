@@ -3,7 +3,7 @@ using Shelter;
 
 namespace Practice
 {
-	public class PracticeConfiguration : Configuration, IConfiguration
+	public class PracticeConfiguration : Configuration
 	{
 		[DataMember(Name = "postgres")]
 		public PostgresConfiguration Postgres { get; set; }

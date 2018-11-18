@@ -4,7 +4,7 @@ using Shelter;
 namespace Practice
 {
 	[DataContract]
-	public class PostgresConfiguration : Configuration, IConfiguration
+	public class PostgresConfiguration : Configuration
 	{
 		[DataMember(Name = "userId")]
 		public string UserId { get; set; }

@@ -17,7 +17,6 @@ namespace Practice
 
 		public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
 			WebHost.CreateDefaultBuilder(args)
-				.AddConfiguration<PracticeConfiguration>()
 				.UseStartup<Startup>();
 	}
 }
