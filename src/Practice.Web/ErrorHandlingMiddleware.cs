@@ -26,7 +26,7 @@ namespace Practice
 				catch (Exception exception)
 				{
 					await context.Response.WriteAsync(
-						JsonConvert.SerializeObject(new { First = e.Message, Second = exception.Message}));
+						JsonConvert.SerializeObject(e));
 				}
 			}
 		}
