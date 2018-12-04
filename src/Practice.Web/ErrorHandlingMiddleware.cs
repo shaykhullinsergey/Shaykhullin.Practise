@@ -15,11 +15,19 @@ namespace Practice
 			}
 			catch (Exception e)
 			{
-				var content = JsonConvert.SerializeObject(e.Data["ShelterData"]);
+				try
+				{
+					var content = JsonConvert.SerializeObject(e.Data["ShelterData"]);
 					
-				context.Response.StatusCode = (int)e.Data["ShelterStatusCode"];
-				context.Response.ContentType = "application/json";
-				await context.Response.WriteAsync(content);
+					context.Response.StatusCode = (int)e.Data["ShelterStatusCode"];
+					context.Response.ContentType = "application/json";
+					await context.Response.WriteAsync(content);
+				}
+				catch (Exception exception)
+				{
+					await context.Response.WriteAsync(
+						JsonConvert.SerializeObject(new { First = e.Message, Second = exception.Message}));
+				}
 			}
 		}
 	}
