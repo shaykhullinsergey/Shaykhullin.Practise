@@ -66,11 +66,17 @@ namespace Practice
 
 				if (nextLecture != null)
 				{
-					await provider.GetRequiredService<IQuizService>()
-						.Add(new Quiz
-						{
-							Profile = profile, Lecture = nextLecture
-						});
+					var alreadyAdded = provider.GetRequiredService<IQuizService>()
+						.Any(x => x.Profile == profile && x.Lecture == nextLecture);
+
+					if (!alreadyAdded)
+					{
+						await provider.GetRequiredService<IQuizService>()
+							.Add(new Quiz
+							{
+								Profile = profile, Lecture = nextLecture
+							});
+					}
 				}
 			}
 			
