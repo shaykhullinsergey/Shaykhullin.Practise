@@ -16,6 +16,14 @@ namespace Practice
 
 		public void Configure(IApplicationBuilder app)
 		{
+			if (DatabaseConfiguration.ShouldUpdateDatabase)
+			{
+				using (var scope = app.ApplicationServices.CreateScope())
+				{
+					DatabaseConfiguration.Configure(scope.ServiceProvider.GetRequiredService<PracticeDatabaseContext>());
+				}
+			}
+			
 			app.ApplicationServices.ConfigureComponents();
 
 			app.UseMiddleware<ErrorHandlingMiddleware>();
