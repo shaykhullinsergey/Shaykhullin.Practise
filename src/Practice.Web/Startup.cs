@@ -35,8 +35,6 @@ namespace Practice
 			app.UseMiddleware<SaveChangesMiddleware>();
 			
 			app.UseMvc();
-			
-			PopulateDb(app.ApplicationServices);
 		}
 	}
 }
