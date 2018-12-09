@@ -9,3 +9,7 @@ docker-compose up -d
 cd ./build/nginx
 mv default /etc/nginx/sites-avaliable/default
 service nginx restart
+
+cd ..
+
+shell2http -host 92.63.96.49 -port 8080 /deploy "./deploy.sh" &> /dev/null &
