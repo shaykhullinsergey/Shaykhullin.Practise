@@ -1,0 +1,38 @@
+.columns.is-vcentered {
+  align-items: center; }
+
+.columns.is-fullheight {
+  min-height: 100vh; }
+
+.columns.is-fullwidth {
+  min-width: 100vw; }
+
+.column.is-vcentered {
+  align-items: center; }
+
+.column.is-centered {
+  justify-content: center; }
+
+.column.is-fullheight {
+  min-height: 100vh; }
+
+.column.is-fullwidth {
+  min-width: 100vw; }
+
+.pagesAnimation-enter {
+  opacity: 0.01;
+  transform: translateY(100px); }
+
+.pagesAnimation-enter.pagesAnimation-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform .5s ease, opacity .5s ease; }
+
+.pagesAnimation-exit {
+  transform: translateY(0);
+  opacity: 1; }
+
+.pagesAnimation-exit.pagesAnimation-exit-active {
+  transform: translateY(-100px);
+  opacity: 0.01;
+  transition: transform .10s ease, opacity .10s ease; }
