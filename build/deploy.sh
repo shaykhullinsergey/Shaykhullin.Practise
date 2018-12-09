@@ -12,3 +12,5 @@ service nginx restart
 cd ..
 
 shell2http -host 92.63.96.49 -port 8080 /deploy "git pull && ./deploy.sh" &> /dev/null &
+
+echo "Deploy: DONE"
