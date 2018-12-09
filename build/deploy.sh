@@ -11,7 +11,7 @@ echo "nginx: DONE"
 cd ../..
 
 docker-compose down
-docker-compose build
-docker-compose up -d
+docker-compose up --build -d
+docker rmi $(docker images -f dangling=true -q) -f
 
 echo "docker-compose: DONE"
