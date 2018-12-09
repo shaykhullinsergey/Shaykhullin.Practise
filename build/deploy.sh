@@ -6,7 +6,7 @@ docker-compose build
 docker-compose up -d
 
 cd ./build/nginx
-cp default /etc/nginx/sites-avaliable/default
+cp default /etc/nginx/sites-available/default
 service nginx restart
 
 cd ..
