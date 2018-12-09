@@ -8,7 +8,7 @@ services:
       context: .
       dockerfile: src/Practice.Frontend/Dockerfile
     ports:
-      - 80:80
+      - 81:80
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
 
@@ -18,7 +18,7 @@ services:
       context: .
       dockerfile: src/Practice.Web/Dockerfile
     ports:
-      - 81:80
+      - 82:80
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
 
