@@ -1,5 +1,5 @@
 FROM node:10 as build
-copy . /var/react
-workdir /var/react/src/Practice.Frontend
-run npm install
-run npm run-script dev
+COPY . /var/react
+WORKDIR /var/react/src/Practice.Frontend
+RUN npm install
+ENTRYPOINT [ "npm", "run-script dev" ]  
