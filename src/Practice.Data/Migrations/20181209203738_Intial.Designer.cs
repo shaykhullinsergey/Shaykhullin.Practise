@@ -10,15 +10,15 @@ using Practice;
 namespace Practice.Migrations
 {
     [DbContext(typeof(PracticeDatabaseContext))]
-    [Migration("20181118072315_Initial")]
-    partial class Initial
+    [Migration("20181209203738_Intial")]
+    partial class Intial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn)
-                .HasAnnotation("ProductVersion", "2.1.2-rtm-30932")
+                .HasAnnotation("ProductVersion", "2.1.4-rtm-31024")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             modelBuilder.Entity("Practice.Answer", b =>
