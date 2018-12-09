@@ -2,7 +2,6 @@
 cd ..
 
 docker-compose down
-git pull
 docker-compose build
 docker-compose up -d
 
@@ -12,4 +11,4 @@ service nginx restart
 
 cd ..
 
-shell2http -host 92.63.96.49 -port 8080 /deploy "./deploy.sh" &> /dev/null &
+shell2http -host 92.63.96.49 -port 8080 /deploy "git pull && ./deploy.sh" &> /dev/null &
