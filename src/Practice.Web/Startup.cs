@@ -26,8 +26,6 @@ namespace Practice
 			
 			app.ApplicationServices.ConfigureComponents();
 
-			app.UseSpaStaticFiles();
-			
 			app.UseMiddleware<ErrorHandlingMiddleware>();
 			app.UseValidation();
 			app.UseMiddleware<SaveChangesMiddleware>();
