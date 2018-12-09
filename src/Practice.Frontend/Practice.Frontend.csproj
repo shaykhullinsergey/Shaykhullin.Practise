@@ -14,4 +14,29 @@
 		<PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Remove="React\node_modules\**" />
+	  <Compile Remove="React\build\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Remove="React\node_modules\**" />
+	  <EmbeddedResource Remove="React\build\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="React\node_modules\**" />
+	  <None Remove="React\build\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Remove="React\node_modules\**" />
+	  <Content Remove="React\build\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <_ContentIncludedByDefault Remove="React\build\asset-manifest.json" />
+	  <_ContentIncludedByDefault Remove="React\build\manifest.json" />
+	</ItemGroup>
+
 </Project>
