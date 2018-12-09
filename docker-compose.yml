@@ -2,13 +2,23 @@ version: '3'
 
 services:
 
-  practice:
-    image: practice
+  practicefrontend:
+    image: practicefrontend
+    build: 
+      context: .
+      dockerfile: src/Practice.Frontend/Dockerfile
+    ports:
+      - 80:80
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+
+  practiceweb:
+    image: practiceweb
     build: 
       context: .
       dockerfile: src/Practice.Web/Dockerfile
     ports:
-      - 80:80
+      - 81:80
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
 

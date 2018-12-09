@@ -7,10 +7,6 @@ namespace Practice
 		public PracticeRouterComponent()
 		{
 			Controller<
-				IndexController,
-				IndexRouteComponent>("");
-			
-			Controller<
 				ProfileController,
 				ProfileRouteComponent>("profiles");
 
