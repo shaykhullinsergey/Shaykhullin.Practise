@@ -8,9 +8,7 @@ services:
       context: .
       dockerfile: src/Practice.Frontend/Dockerfile
     ports:
-      - 81:80
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Production
+      - 81:3000
 
   practiceweb:
     image: practiceweb

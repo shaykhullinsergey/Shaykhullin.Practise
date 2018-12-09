@@ -1,9 +1,5 @@
-FROM microsoft/dotnet:2.1-sdk AS build
-COPY . /var/deploy
-WORKDIR /var/deploy/src/Practice.Frontend
-RUN dotnet publish -c Release -o out
-
-FROM microsoft/dotnet:2.1-aspnetcore-runtime AS runtime
-WORKDIR /var/deploy
-COPY --from=build /var/deploy/src/Practice.Frontend/out ./
-ENTRYPOINT ["dotnet", "Practice.Frontend.dll"]
+FROM node:10 as build
+copy . /var/react
+workdir /var/react/src/Practice.Frontend
+run npm install
+run npm run-script dev
