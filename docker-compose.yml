@@ -9,6 +9,8 @@ services:
       dockerfile: src/Practice.Frontend/Dockerfile
     ports:
       - 81:3000
+    environment:
+      - DANGEROUSLY_DISABLE_HOST_CHECK=true
 
   practiceweb:
     image: practiceweb
