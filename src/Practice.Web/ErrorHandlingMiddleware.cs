@@ -23,7 +23,7 @@ namespace Practice
 					context.Response.ContentType = "application/json";
 					await context.Response.WriteAsync(content);
 				}
-				catch (Exception exception)
+				catch (Exception)
 				{
 					await context.Response.WriteAsync(
 						JsonConvert.SerializeObject(e));

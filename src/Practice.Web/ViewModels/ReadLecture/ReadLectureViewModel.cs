@@ -22,8 +22,6 @@ namespace Practice
 
 		public async Task Load(IServiceProvider provider, int id)
 		{
-			var l = await provider.GetRequiredService<PracticeDatabaseContext>().Lectures.ToListAsync();
-			
 			var lecture = await provider.GetRequiredService<ILectureService>().FirstAsync(x => x.Id == id);
 
 			Title = lecture.Title;
