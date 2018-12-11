@@ -1,6 +1,6 @@
 #!/bin/bash
 
-shell2http -host 92.63.96.49 -port 8080 /deploy "git pull && ./deploy.sh" &> /dev/null &
+shell2http -host 62.109.18.11 -port 8080 /deploy "git pull && ./deploy.sh" &> /dev/null &
 echo "shell2http: DONE"
 
 cd ..
