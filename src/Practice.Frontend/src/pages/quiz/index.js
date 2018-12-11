@@ -55,22 +55,25 @@ class Quiz extends Component {
             ? <div className="column is-fullwidth">
                 <h2 className="title is-4">{lecture.title}</h2>
                 {lecture.questions.map((question) => (
-                    <div key={question.id} className="column">
-                        <h2 className="subtitle is-5">{`${question.id}. ${question.text}`}</h2>
-                        <div className="control">
-                            <form>
-                                {question.answers.map((answer) =>
-                                    <label key={answer.id} className="radio">
-                                        <input onChange={() => this.onChangeAnswer(answer.id, question.id)}
-                                               type="radio" name="answer"/>
-                                        {answer.text}
-                                    </label>
+                    <div key={question.id} className="column box">
+                        <h2 className="subtitle is-5 has-text-weight-semibold">{question.text}</h2>
+                        <div className="control box">
+                                {question.answers.map(answer =>
+                                    <form key={answer.id}>
+                                        <label className="radio">
+                                            <input 
+                                                onChange={() => this.onChangeAnswer(answer.id, question.id)}
+                                                id={answer.id}
+                                                type="radio"
+                                                name={answer.id}/>
+                                            {answer.text}
+                                        </label>
+                                    </form>
                                 )}
-                            </form>
                         </div>
                     </div>
                 ))}
-                <button onClick={this.onQuiz} className="button is-link">Пройти тест</button>
+                <button onClick={this.onQuiz} className="button is-link">Закончить тест</button>
             </div>
             : <div/>
     }

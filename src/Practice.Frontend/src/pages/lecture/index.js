@@ -1,27 +1,27 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import _isEmpty from 'lodash/isEmpty';
-import ReactMarkdown from "react-markdown";
+import Remarkable from 'remarkable';
+
+const markdown = new Remarkable('full', {
+    html: true,
+    linkify: true,
+    typographer: true,
+});
 
 class Lecture extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
-
-    onQuiz = () => {
-        this.props.onCurrentElementChange('quiz');
-    };
-
+    onQuiz = () => this.props.onCurrentElementChange('quiz');
+    
     render() {
         const {lecture} = this.props;
+
         return !_isEmpty(lecture)
             ? <div className="column">
                 <h2 className="title is-4">{lecture.title}</h2>
                 {lecture.chapters.map((chapter) => (
                     <div key={chapter.title} className="column">
                         <h2 className="subtitle is-5">{chapter.title}</h2>
-                        <ReactMarkdown source={chapter.text}/>
+                        <p dangerouslySetInnerHTML={{__html: markdown.render('# Я h1 и хочу выделяться')}}></p>
                     </div>
                 ))}
                 <div className="columns is-centered">
@@ -30,7 +30,7 @@ class Lecture extends Component {
                     </div>
                 </div>
             </div>
-            : <div/>
+            : null;
     }
 }
 

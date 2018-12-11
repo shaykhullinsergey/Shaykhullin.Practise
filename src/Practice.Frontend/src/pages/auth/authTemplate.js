@@ -16,7 +16,7 @@ const AuthTemplate = ({formData: {name, group}, formErrors, onChange, onSubmit})
                            onChange={({target}) => onChange(target)}
                            type="text"/>
                 </label>
-                <button type="button" className="button is-fullwidth is-link" onClick={onSubmit}>Submit</button>
+                <button type="button" className="button is-fullwidth is-link" onClick={onSubmit}>Войти</button>
             </form>
         </div>
     );
