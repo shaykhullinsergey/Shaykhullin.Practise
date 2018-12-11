@@ -1,48 +1,48 @@
-.histogram {
-  position: relative; }
-  .histogram__title-container {
-    width: 500px; }
-  .histogram text {
-    fill: #83aee5; }
-  .histogram .axis path {
-    stroke-width: 0; }
-  .histogram .grid line {
-    stroke: #bcd5f3; }
-  .histogram .grid path {
-    stroke: none; }
-  .histogram .grid text {
-    font-size: 10px; }
-  .histogram .axis-title {
-    font-size: 14px; }
-  .histogram__title {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.11;
-    color: #1b2834;
-    margin-bottom: 80px;
-    border-bottom: 1px solid #e4e7ea;
-    padding-bottom: 8px; }
-  .histogram__tooltip {
-    position: absolute;
-    top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 28px;
-    padding: 4px 10px;
-    box-sizing: border-box;
-    color: #ffffff;
-    background-color: inherit;
-    border: 1px solid #d4d8db;
-    border-radius: 3px; }
-  .histogram__tooltip-amount {
-    color: #2d74da;
-    font-size: 16px;
-    margin-right: 6px; }
-  .histogram__tooltip-row {
-    font-size: 16px;
-    color: #ffffff;
-    white-space: nowrap; }
-  .histogram__tooltip-title {
-    font-size: 14px;
-    color: #68717c; }
+.neoantigens-types-chart__chart-wrapper {
+  max-width: 540px;
+  padding: 20px 0 0;
+  box-sizing: border-box; }
+
+.neoantigens-types-chart__chart-text {
+  font-size: 12px;
+  fill: #83aee5; }
+
+.neoantigens-types-chart__legend-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 94px;
+  margin-top: 20px; }
+
+.neoantigens-types-chart__legend-item {
+  position: relative;
+  height: 20px;
+  max-width: 50%;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  line-height: 20px; }
+
+.neoantigens-types-chart__legend-item-indicator {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(0, -50%); }
+
+.neoantigens-types-chart__legend-item-text {
+  min-width: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #68717c;
+  border-radius: 3px; }
+  .neoantigens-types-chart__legend-item-text--selected {
+    background: rgba(50, 129, 223, 0.12); }

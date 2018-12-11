@@ -71,52 +71,47 @@ $theme-light-60-color: $dark-blue-60
 $theme-base-70-color: $dark-blue-70
 $theme-dark-80-color: $dark-blue-80
 
-.histogram
-  position: relative
-  &__title-container
-    width: 500px
-  text
-    fill: $theme-light-30-color
-  .axis path
-    stroke-width: 0
-  .grid
-    line
-      stroke: #bcd5f3
-    path
-      stroke: none
-    text
-      font-size: 10px
-  .axis-title
-    font-size: 14px
-  &__title
-    font-size: 18px
-    font-weight: 600
-    line-height: 1.11
-    color: $text-dark-color
-    margin-bottom: 80px
-    border-bottom: 1px solid $light-grey-30
-    padding-bottom: 8px
-  &__tooltip
-    position: absolute
-    top: 80px
-    display: flex
-    justify-content: center
-    align-items: center
-    height: 28px
-    padding: 4px 10px
+.neoantigens-types-chart
+  &__chart-wrapper
+    max-width: 540px
+    padding: 20px 0 0
     box-sizing: border-box
-    color: $text-white-color
-    background-color: inherit
-    border: 1px solid $light-grey-40
-    border-radius: 3px
-  &__tooltip-amount
-    color: $dark-blue-70
-    font-size: 16px
-    margin-right: 6px
-  &__tooltip-row
-    font-size: 16px
-    color: $text-white-color
-    white-space: nowrap
-  &__tooltip-title
+  &__chart-text
+    font-size: 12px
+    fill: #83aee5
+  &__legend-list
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    height: 94px
+    margin-top: 20px
+  &__legend-item
+    position: relative
+    height: 20px
+    max-width: 50%
+    margin-bottom: 24px
+    padding-left: 16px
+    padding-right: 16px
+    box-sizing: border-box
+    line-height: 20px
+  &__legend-item-indicator
+    position: absolute
+    top: 50%
+    left: 0
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    transform: translate(0, -50%)
+  &__legend-item-text
+    min-width: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-left: 4px
+    padding-right: 4px
+    box-sizing: border-box
     font-size: 14px
     color: $text-base-color
+    border-radius: 3px
+    &--selected
+      background: rgba($theme-light-60-color, .12)

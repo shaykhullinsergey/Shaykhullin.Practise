@@ -1,20 +1,15 @@
 import React, {Component} from 'react';
 import * as d3 from 'd3';
 
-class PieChart extends Component {
+class AnswerPieChart extends Component {
     componentDidMount() {
-        console.log(this.props)
         const rad = 12;
-        const {icon, mainColor, secondColor, type} = this.props.style;
         const width = this.props.size[0] / rad,
             height = this.props.size[1] / rad,
             radius = Math.min(width, height) / 2;
-        const color = [mainColor, mainColor, mainColor];
-        const scale = type === 'check'
-            ? 0.061
-            : type === 'cross'
-                ? 0.6
-                : 0.05
+        const color = ['#66BB6A', '#f44336']
+        const plusResult = this.props.result.results;
+        const minusResult = 5 - plusResult;
 
         const pie = d3.pie()
             .value(function (d) {
@@ -24,7 +19,7 @@ class PieChart extends Component {
 
         const arc = d3.arc()
             .innerRadius(radius - this.props.innerRadius / rad)
-            .outerRadius(radius - 20 / rad);
+            .outerRadius(radius - 10 / rad);
 
         const svg = d3.select(this.pieChart)
             .attr("width", width)
@@ -33,7 +28,7 @@ class PieChart extends Component {
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
         svg
-            .datum([1])
+            .datum([plusResult, minusResult])
             .selectAll("path")
             .data(pie)
             .enter().append("path")
@@ -42,10 +37,12 @@ class PieChart extends Component {
             })
             .attr("d", arc);
 
-        svg.append("path")
-            .attr('d', icon)
-            .attr('fill', secondColor)
-            .attr('transform', `translate(-13, -13) scale(${scale})`)
+        svg.append("text")
+            .attr('transform', 'translate(-72, 28)')
+            .style("fill", "black")
+            .style("font-size", "100px")
+            .text(`${plusResult}/${5}`)
+        // transform: translate(-72px,28px);
     }
 
     render() {
@@ -55,4 +52,4 @@ class PieChart extends Component {
     }
 }
 
-export default PieChart;
+export default AnswerPieChart;
