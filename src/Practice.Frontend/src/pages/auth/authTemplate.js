@@ -6,12 +6,12 @@ const AuthTemplate = ({formData: {name, group}, formErrors, onChange, onSubmit})
             <form className="column is-4" action="submit">
                 <h2 className="title has-text-centered">The Education Recourse</h2>
                 <label className="label" htmlFor="name">
-                    Name
+                    Имя
                     <input className="input" value={name} name="name" onChange={({target}) => onChange(target)}
                            type="text"/>
                 </label>
                 <label className="label" htmlFor="group">
-                    Group
+                    Группа
                     <input className="input" value={group} name="group"
                            onChange={({target}) => onChange(target)}
                            type="text"/>

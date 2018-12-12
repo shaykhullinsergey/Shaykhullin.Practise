@@ -21,7 +21,7 @@ class Lecture extends Component {
                 {lecture.chapters.map((chapter) => (
                     <div key={chapter.title} className="column">
                         <h2 className="subtitle is-5">{chapter.title}</h2>
-                        <p dangerouslySetInnerHTML={{__html: markdown.render('# Я h1 и хочу выделяться')}}></p>
+                        <p dangerouslySetInnerHTML={{__html: markdown.render(chapter.text)}}></p>
                     </div>
                 ))}
                 <div className="columns is-centered">
