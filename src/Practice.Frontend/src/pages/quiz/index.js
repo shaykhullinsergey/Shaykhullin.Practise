@@ -12,6 +12,10 @@ class Quiz extends Component {
         };
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     onChangeAnswer = (answerId, questionId) => {
         const result = this.state.questions.some(question => question.questionId === questionId);
         if (result) {
@@ -46,7 +50,7 @@ class Quiz extends Component {
         LecturesService.sendAnswer(session, data)
             .then((data) => this.props.onAnswerChange(data))
             .then(() => this.props.history.push(`${this.props.match.url}/answer`))
-            .then(()=> this.props.onCurrentElementChange('answer'));
+            .then(() => this.props.onCurrentElementChange('answer'));
     };
 
     render() {
@@ -58,18 +62,18 @@ class Quiz extends Component {
                     <div key={question.id} className="column box">
                         <h2 className="subtitle is-5 has-text-weight-semibold">{question.text}</h2>
                         <div className="control box">
+                            <form>
                                 {question.answers.map(answer =>
-                                    <form key={answer.id}>
-                                        <label className="radio">
-                                            <input 
-                                                onChange={() => this.onChangeAnswer(answer.id, question.id)}
-                                                id={answer.id}
-                                                type="radio"
-                                                name={answer.id}/>
-                                            {answer.text}
-                                        </label>
-                                    </form>
+                                    <label style={{marginLeft: 0}} className="radio column is-12">
+                                        <input
+                                            onChange={() => this.onChangeAnswer(answer.id, question.id)}
+                                            id={answer.id}
+                                            type="radio"
+                                            name={question.id}/>
+                                        {answer.text}
+                                    </label>
                                 )}
+                            </form>
                         </div>
                     </div>
                 ))}

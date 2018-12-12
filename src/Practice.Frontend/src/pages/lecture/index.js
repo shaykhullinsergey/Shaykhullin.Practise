@@ -11,7 +11,11 @@ const markdown = new Remarkable('full', {
 
 class Lecture extends Component {
     onQuiz = () => this.props.onCurrentElementChange('quiz');
-    
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         const {lecture} = this.props;
 
@@ -22,7 +26,7 @@ class Lecture extends Component {
                     {lecture.chapters.map((chapter) => (
                         <div key={chapter.title} className="column box">
                             <h2 className="subtitle is-5">{chapter.title}</h2>
-                            <p dangerouslySetInnerHTML={{__html: markdown.render(chapter.text)}}></p>
+                            <p style={{textAlign: 'left'}} dangerouslySetInnerHTML={{__html: markdown.render(chapter.text)}}></p>
                         </div>
                     ))}
                     <button onClick={this.onQuiz} className="button is-link">Пройти тест</button>
