@@ -12,6 +12,9 @@ namespace Practice
 		[Column("title")]
 		public string Title { get; set; }
 
+		[Column("order")]
+		public int Order { get; set; }
+		
 		public virtual ICollection<Chapter> Chapters { get; set; }
 		public virtual ICollection<Quiz> Quizzes { get; set; }
 		public virtual ICollection<Question> Questions { get; set; }

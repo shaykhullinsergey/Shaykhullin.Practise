@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Practice.Migrations
 {
-    public partial class Intial : Migration
+    public partial class AddLEctureOrder : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,8 @@ namespace Practice.Migrations
                 {
                     id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
-                    title = table.Column<string>(nullable: true)
+                    title = table.Column<string>(nullable: true),
+                    order = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

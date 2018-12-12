@@ -16,18 +16,16 @@ class Lecture extends Component {
         const {lecture} = this.props;
 
         return !_isEmpty(lecture)
-            ? <div className="column">
-                <h2 className="title is-4">{lecture.title}</h2>
-                {lecture.chapters.map((chapter) => (
-                    <div key={chapter.title} className="column">
-                        <h2 className="subtitle is-5">{chapter.title}</h2>
-                        <p dangerouslySetInnerHTML={{__html: markdown.render(chapter.text)}}></p>
-                    </div>
-                ))}
-                <div className="columns is-centered">
-                    <div className="column is-2">
-                        <button onClick={this.onQuiz} className="button is-link">Пройти тест</button>
-                    </div>
+            ? <div className="column box has-text-centered">
+                <div className="box">
+                    <h2 className="title is-4">{lecture.title}</h2>
+                    {lecture.chapters.map((chapter) => (
+                        <div key={chapter.title} className="column box">
+                            <h2 className="subtitle is-5">{chapter.title}</h2>
+                            <p dangerouslySetInnerHTML={{__html: markdown.render(chapter.text)}}></p>
+                        </div>
+                    ))}
+                    <button onClick={this.onQuiz} className="button is-link">Пройти тест</button>
                 </div>
             </div>
             : null;

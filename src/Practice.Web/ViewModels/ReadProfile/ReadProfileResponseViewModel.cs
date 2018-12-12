@@ -22,7 +22,7 @@ namespace Practice
 			Group = profile.Group;
 			
 			Lectures = profile.Quizzes
-				.OrderBy(x => x.Id)
+				.OrderBy(x => x.Lecture.Order)
 				.Select(x => new ReadProfileLectureViewModel(x))
 				.ToList();
 		}

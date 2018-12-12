@@ -4,7 +4,7 @@ namespace Practice
 {
 	public static class DatabaseConfiguration
 	{
-		public static bool ShouldUpdateDatabase => false;
+		public static bool ShouldUpdateDatabase => true;
 		
 		public static void Configure(PracticeDatabaseContext context)
 		{
@@ -32,7 +32,7 @@ namespace Practice
 		private static IEnumerable<Lecture> CreateLectures()
 		{
 			yield return Lecture1();
-			// yield return Lecture2();
+			yield return Lecture2();
 		}
 
 		private static Lecture Lecture1()
@@ -56,9 +56,9 @@ namespace Practice
 					Text = "Вопрос 2",
 					Answers = new List<Answer>
 					{
-						new Answer { Text = "Ответ 1", Correct = false },
+						new Answer { Text = "Ответ 1", Correct = true },
 						new Answer { Text = "Ответ 2", Correct = false },
-						new Answer { Text = "Ответ 3", Correct = true },
+						new Answer { Text = "Ответ 3", Correct = false },
 						new Answer { Text = "Ответ 4", Correct = false }
 					}
 				},
@@ -117,6 +117,7 @@ namespace Practice
 			return new Lecture
 			{
 				Title = "Лекция 1",
+				Order = 1,
 				Chapters = chapters,
 				Questions = questions 
 			};
@@ -138,6 +139,50 @@ namespace Practice
 						new Answer { Text = "Ответ 4", Correct = false }
 					}
 				},
+				new Question
+				{
+					Text = "Вопрос 2",
+					Answers = new List<Answer>
+					{
+						new Answer { Text = "Ответ 1", Correct = true },
+						new Answer { Text = "Ответ 2", Correct = false },
+						new Answer { Text = "Ответ 3", Correct = false },
+						new Answer { Text = "Ответ 4", Correct = false }
+					}
+				},
+				new Question
+				{
+					Text = "Вопрос 3",
+					Answers = new List<Answer>
+					{
+						new Answer { Text = "Ответ 1", Correct = true },
+						new Answer { Text = "Ответ 2", Correct = false },
+						new Answer { Text = "Ответ 3", Correct = false },
+						new Answer { Text = "Ответ 4", Correct = false }
+					}
+				},
+				new Question
+				{
+					Text = "Вопрос 4",
+					Answers = new List<Answer>
+					{
+						new Answer { Text = "Ответ 1", Correct = true },
+						new Answer { Text = "Ответ 2", Correct = false },
+						new Answer { Text = "Ответ 3", Correct = false },
+						new Answer { Text = "Ответ 4", Correct = true },
+					}
+				},
+				new Question
+				{
+					Text = "Вопрос 5",
+					Answers = new List<Answer>
+					{
+						new Answer { Text = "Ответ 1", Correct = true },
+						new Answer { Text = "Ответ 2", Correct = false },
+						new Answer { Text = "Ответ 3", Correct = false },
+						new Answer { Text = "Ответ 4", Correct = false }
+					}
+				}
 				// new Question()
 			};
 			#endregion
@@ -150,6 +195,10 @@ namespace Practice
 				{
 					Title = "Глава 1", Text = "Топ контент первой главы"
 				},
+				new Chapter
+				{
+					Title = "Глава 2", Text = "Алекс топ контент. Тут текст лекции."
+				},
 				// new Chapter()
 			};
 			
@@ -157,7 +206,8 @@ namespace Practice
 			
 			return new Lecture
 			{
-				Title = "Лекция 1",
+				Title = "Лекция 322",
+				Order = 2,
 				Chapters = chapters,
 				Questions = questions 
 			};
