@@ -22,6 +22,8 @@ namespace Practice
 			validationContext.Validate(model, m => m.Group)
 				.If(() => string.IsNullOrWhiteSpace(model.Group))
 				.Add<CreateProfileRequestValidationSection>(x => x.GroupMustBeSet);
+
+			model.Group = model.Group.ToUpper();
 			
 			validationContext.Validate(model, m => m.Group)
 				.When(() => !Regex.IsMatch(model.Group, @"^[аисбоАИСБО]{4}-\d\d-\d\d"))
