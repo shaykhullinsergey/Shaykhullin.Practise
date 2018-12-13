@@ -3,7 +3,11 @@ import axios from 'axios';
 class LecturesService {
     static getLecture = (lectureId) =>
         axios.get(`/lectures/${lectureId}`)
-            .then(({data}) => data);
+            .then(({data}) => {
+                console.log(data);
+                return data;
+            })
+            .catch(error => console.error(error));
 
     static sendAnswer = (session, data) => axios.post('/quizzes', {
             ...data
@@ -11,7 +15,11 @@ class LecturesService {
         {
             params: {session}
         })
-        .then(({data}) => data)
+        .then(({data}) => {
+            console.log(data);
+            return data;
+        })
+        .catch(error => console.error(error));
 }
 
 export default LecturesService;

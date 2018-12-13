@@ -1,7 +1,8 @@
 .neoantigens-types-chart__chart-wrapper {
   max-width: 540px;
   padding: 20px 0 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 115px 0 0 115px; }
 
 .neoantigens-types-chart__chart-text {
   font-size: 12px;

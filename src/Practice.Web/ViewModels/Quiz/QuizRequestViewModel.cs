@@ -38,13 +38,13 @@ namespace Practice
 
 			var count = 0;
 			
-			foreach (var question in lecture.Questions)
+			foreach (var question in Questions)
 			{
-				var input = Questions.FirstOrDefault(x => x.QuestionId == question.Id);
+				var input = lecture.Questions.FirstOrDefault(x => x.Id == question.QuestionId);
 
 				if (input != null)
 				{
-					var answer = question.Answers.First(x => x.Id == input.AnswerId);
+					var answer = input.Answers.First(x => x.Id == question.AnswerId);
 					
 					results[count] = answer.Correct;
 				}
