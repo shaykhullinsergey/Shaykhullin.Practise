@@ -8,6 +8,7 @@ import AuthService from "../../services/authService";
 import PieChart from "../../components/pieChart";
 import LecturesService from "../../services/lecturesService";
 import Answer from "../answer";
+import { Preloader } from "../../components/preloader";
 
 class Lectures extends Component {
     constructor(props) {
@@ -28,10 +29,12 @@ class Lectures extends Component {
     }
 
     onLectureChange = (lectureId) => {
+        Preloader.show();
+
         LecturesService.getLecture(lectureId)
             .then((data) => {
                     this.props.onLectureChange({...data, id: lectureId});
-                    this.setState({currentElement: 'lecture'})
+                    this.setState({currentElement: 'lecture'}, () => Preloader.hide())
                 }
             );
     };

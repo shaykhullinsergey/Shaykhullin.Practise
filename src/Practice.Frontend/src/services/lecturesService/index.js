@@ -6,8 +6,7 @@ class LecturesService {
             .then(({data}) => {
                 console.log(data);
                 return data;
-            })
-            .catch(error => console.error(error));
+            });
 
     static sendAnswer = (session, data) => axios.post('/quizzes', {
             ...data
@@ -18,8 +17,7 @@ class LecturesService {
         .then(({data}) => {
             console.log(data);
             return data;
-        })
-        .catch(error => console.error(error));
+        });
 }
 
 export default LecturesService;

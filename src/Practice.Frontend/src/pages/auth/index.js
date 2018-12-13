@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import AuthTemplate from "./authTemplate";
 import AuthService from "../../services/authService";
+import { Preloader } from '../../components/preloader';
 
 class Auth extends Component {
     constructor(props) {
@@ -33,10 +34,14 @@ class Auth extends Component {
 
     onSubmit = () => {
         const {formData} = this.state;
+
+        Preloader.show();
+
         AuthService.getSession(formData)
             .then((data) => {
                 localStorage.setItem('education_recourse_session', JSON.stringify(data));
                 this.props.history.push(`/lectures/${data.session}`);
+                Preloader.hide();
             })
             .catch(error => console.log(error.response.data));
     };

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from "react-redux";
 import LecturesService from "../../services/lecturesService";
 import _isEmpty from "lodash/isEmpty";
+import { Preloader } from '../../components/preloader';
 
 class Quiz extends Component {
     constructor(props) {
@@ -47,20 +48,25 @@ class Quiz extends Component {
             questions
         };
 
+        Preloader.show();
+
         LecturesService.sendAnswer(session, data)
             .then((data) => this.props.onAnswerChange(data))
             .then(() => this.props.history.push(`${this.props.match.url}/answer`))
-            .then(() => this.props.onCurrentElementChange('answer'));
+            .then(() => {
+                this.props.onCurrentElementChange('answer'); 
+                Preloader.hide();
+            });
     };
 
     render() {
         const {lecture} = this.props;
         return !_isEmpty(lecture)
-            ? <div className="column is-fullwidth">
+            ? <div className="column is-fullwidth has-text-centered">
                 <h2 className="title is-4">{lecture.title}</h2>
                 {lecture.questions.map((question) => (
                     <div key={question.id} className="column box">
-                        <h2 className="subtitle is-5 has-text-weight-semibold">{question.text}</h2>
+                        <h2 className="subtitle is-5 has-text-weight-semibold is-pulled-left">{question.text}</h2>
                         <div className="control box">
                             <form>
                                 {question.answers.map(answer =>
