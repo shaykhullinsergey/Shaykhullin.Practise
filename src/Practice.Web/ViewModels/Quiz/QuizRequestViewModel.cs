@@ -62,7 +62,8 @@ namespace Practice
 			if (quiz.Result == 5)
 			{
 				var nextLecture = await provider.GetRequiredService<ILectureService>()
-					.FirstOrDefaultAsync(x => x.Id > lecture.Id);
+					.OrderBy(x => x.Order)
+					.FirstOrDefaultAsync(x => x.Order > lecture.Order);
 
 				if (nextLecture != null)
 				{

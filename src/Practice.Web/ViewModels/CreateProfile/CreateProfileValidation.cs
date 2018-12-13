@@ -23,10 +23,10 @@ namespace Practice
 				.If(() => string.IsNullOrWhiteSpace(model.Group))
 				.Add<CreateProfileRequestValidationSection>(x => x.GroupMustBeSet);
 
-			model.Group = model.Group.ToUpper();
+			model.Group = model.Group?.ToUpper();
 			
 			validationContext.Validate(model, m => m.Group)
-				.When(() => !Regex.IsMatch(model.Group, @"^[аисбоАИСБО]{4}-\d\d-\d\d"))
+				.When(() => !Regex.IsMatch(model.Group ?? "", @"^[аисбоАИСБО]{4}-\d\d-\d\d"))
 				.Add<CreateProfileRequestValidationSection>(x => x.GroupPattern);
 		}
 	}
