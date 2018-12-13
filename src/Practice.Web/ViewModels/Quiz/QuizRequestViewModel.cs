@@ -81,12 +81,15 @@ namespace Practice
 				}
 			}
 			
-			var statistics = await provider
+			var quizResults = await provider
 				.GetRequiredService<IQuizService>()
 				.Where(x => x.Lecture == lecture && x.Result != null)
+				.ToListAsync();
+
+			var statistics = quizResults
 				.GroupBy(x => x.Result)
 				.OrderBy(x => x.Key)
-				.ToDictionaryAsync(
+				.ToDictionary(
 					x => x.Key.Value,
 					x => x.Count());
 			
