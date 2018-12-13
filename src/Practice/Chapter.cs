@@ -10,6 +10,9 @@ namespace Practice
 
 		[Column("lectureId")]
 		public int LectureId { get; set; }
+
+		[Column("order")]
+		public int Order { get; set; }
 		
 		[Column("title")]
 		public string Title { get; set; }

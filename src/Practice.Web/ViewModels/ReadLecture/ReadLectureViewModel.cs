@@ -27,7 +27,7 @@ namespace Practice
 			Title = lecture.Title;
 	
 			Chapters = lecture.Chapters
-				.OrderByDescending(x => x.Id)
+				.OrderBy(x => x.Order)
 				.Select(x => new ReadLectureChapterViewModel(x))
 				.ToList();
 
