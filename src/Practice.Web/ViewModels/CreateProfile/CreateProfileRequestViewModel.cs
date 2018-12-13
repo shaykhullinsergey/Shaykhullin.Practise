@@ -29,7 +29,7 @@ namespace Practice
 			await provider.GetRequiredService<IProfileService>().Add(profile);
 
 			var lecture = await provider.GetRequiredService<ILectureService>()
-				.OrderBy(x => x.Id)
+				.OrderBy(x => x.Order)
 				.FirstAsync();
 
 			var quiz = new Quiz
