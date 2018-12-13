@@ -8,7 +8,7 @@ import AuthService from "../../services/authService";
 import PieChart from "../../components/pieChart";
 import LecturesService from "../../services/lecturesService";
 import Answer from "../answer";
-import { Preloader } from "../../components/preloader";
+import {Preloader} from "../../components/preloader";
 
 class Lectures extends Component {
     constructor(props) {
@@ -24,7 +24,7 @@ class Lectures extends Component {
         const {sessionId} = this.props.match.params;
         AuthService.getProfile(sessionId)
             .then((data) =>
-                this.setState({...data, currentElement: 'not-chosen'})
+                this.props.onProfileInfoChange({...data, currentElement: 'not-chosen'})
             );
     }
 
@@ -34,13 +34,13 @@ class Lectures extends Component {
         LecturesService.getLecture(lectureId)
             .then((data) => {
                     this.props.onLectureChange({...data, id: lectureId});
-                    this.setState({currentElement: 'lecture'}, () => Preloader.hide())
+                    this.props.onProfileInfoChange({currentElement: 'lecture'})
                 }
-            );
+            ).then(() => Preloader.hide());
     };
 
     onCurrentElementChange = (element) => {
-        this.setState({
+        this.props.onProfileInfoChange({
             currentElement: element
         })
     };
@@ -51,7 +51,8 @@ class Lectures extends Component {
     };
 
     render() {
-        const {name, group, lectures, currentElement} = this.state;
+        const {name, group, lectures, currentElement} = this.props.profile;
+        console.log(lectures)
         return <div style={{position: 'absolute'}} className="columns">
             <aside style={{
                 borderRight: '1px solid #303f9f',
@@ -87,7 +88,7 @@ class Lectures extends Component {
                                                 secondColor: '#FFF176',
                                                 type: 'question'
                                             }
-                                            : lecture.result > 4
+                                            : lecture.result === 5
                                                 ? {
                                                     icon: this.check,
                                                     mainColor: '#388E3C',
@@ -119,10 +120,17 @@ class Lectures extends Component {
     }
 }
 
+const mapStateToProps = (state) => ({
+    profile: state.profile
+});
+
 const dispatchStateToProps = dispatch => ({
     onLectureChange: (lecture) => {
         dispatch({type: 'SET_LECTURE', item: lecture})
+    },
+    onProfileInfoChange: (profile) => {
+        dispatch({type: 'GET_PROFILE', item: profile})
     }
 });
 
-export default connect(null, dispatchStateToProps)(Lectures);
+export default connect(mapStateToProps, dispatchStateToProps)(Lectures);

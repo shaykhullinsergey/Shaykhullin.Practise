@@ -84,7 +84,7 @@ export default class NeoantigensTypesChart extends Component {
             .append('text')
             .attr('class', 'neoantigens-types-chart__chart-text')
             .attr('transform', d => `translate(${x(d[0])},${margin.top - 10})`)
-            .text(d => `${d.data.value}%`);
+            .text(d => `${d.data.value.toFixed(1)}%`);
         bar
             .append('g')
             .attr('transform', `translate(${margin.left},${margin.top})`)
@@ -153,7 +153,7 @@ export default class NeoantigensTypesChart extends Component {
                                     <div
                                         className="neoantigens-types-chart__legend-item-label">{_capitalize(neoantigen.label)}</div>
                                     <div
-                                        className="neoantigens-types-chart__legend-item-percent">{Math.round(neoantigen.value)}%
+                                        className="neoantigens-types-chart__legend-item-percent">{neoantigen.value.toFixed(1)}%
                                     </div>
                                 </div>
                             </div>

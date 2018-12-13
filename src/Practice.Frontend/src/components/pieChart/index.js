@@ -1,9 +1,33 @@
 import React, {Component} from 'react';
+import _isEqual from 'lodash/isEmpty';
 import * as d3 from 'd3';
 
 class PieChart extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            result: this.props.result
+        }
+    }
+
     componentDidMount() {
-        console.log(this.props)
+
+        d3.select(this.pieChart);
+        this.update();
+    }
+
+    componentWillReceiveProps(nextProps) {
+        const {result} = this.state;
+        if (_isEqual(result, nextProps.result)) return;
+        this.setState({result: nextProps.result}, () => this.update());
+    }
+
+    update = (prevProps, prevState, snapshot) => {
+        d3.select(this.pieChart)
+            .selectAll('*')
+            .remove();
+
         const rad = 12;
         const {icon, mainColor, secondColor, type} = this.props.style;
         const width = this.props.size[0] / rad,
@@ -15,6 +39,7 @@ class PieChart extends Component {
             : type === 'cross'
                 ? 0.6
                 : 0.05
+        const {result} = this.state;
 
         const pie = d3.pie()
             .value(function (d) {

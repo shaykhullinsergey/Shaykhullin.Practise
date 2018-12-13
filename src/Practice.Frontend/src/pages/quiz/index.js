@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import {connect} from "react-redux";
 import LecturesService from "../../services/lecturesService";
 import _isEmpty from "lodash/isEmpty";
-import { Preloader } from '../../components/preloader';
+import {Preloader} from '../../components/preloader';
+import AuthService from "../../services/authService";
 
 class Quiz extends Component {
     constructor(props) {
@@ -52,9 +53,13 @@ class Quiz extends Component {
 
         LecturesService.sendAnswer(session, data)
             .then((data) => this.props.onAnswerChange(data))
+            .then(() => AuthService.getProfile(session)
+                .then((data) => {
+                    this.props.onProfileInfoChange(data);
+                }))
             .then(() => this.props.history.push(`${this.props.match.url}/answer`))
             .then(() => {
-                this.props.onCurrentElementChange('answer'); 
+                this.props.onCurrentElementChange('answer');
                 Preloader.hide();
             });
     };
@@ -96,6 +101,9 @@ const mapStateToProps = state => ({
 const dispatchStateToProps = dispatch => ({
     onAnswerChange: (answer) => {
         dispatch({type: 'SET_ANSWER', item: answer})
+    },
+    onProfileInfoChange: (profile) => {
+        dispatch({type: 'GET_PROFILE', item: profile})
     }
 });
 
