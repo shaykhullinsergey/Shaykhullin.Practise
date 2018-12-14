@@ -1,9 +1,12 @@
 import React from 'react';
+import _isEmpty from 'lodash/isEmpty';
+import BackendErrorMessages from "../../components/backendErrorErrors";
 
 const AuthTemplate = ({formData: {name, group}, formErrors, onChange, onSubmit}) => {
     return (
-        <div style={{position:'absolute'}} className="columns is-fullheight is-fullwidth is-centered is-vcentered">
-            <form className="column is-4" action="submit">
+        <div style={{position: 'absolute', display: 'flex', flexDirection: 'column'}}
+             className="columns is-fullheight is-fullwidth is-centered is-vcentered">
+            <form className="column is-3" action="submit">
                 <h2 className="title has-text-centered">The Education Recourse</h2>
                 <label className="label" htmlFor="name">
                     Имя
@@ -18,6 +21,7 @@ const AuthTemplate = ({formData: {name, group}, formErrors, onChange, onSubmit})
                 </label>
                 <button type="button" className="button is-fullwidth is-link" onClick={onSubmit}>Войти</button>
             </form>
+            {!_isEmpty(formErrors) && <BackendErrorMessages errorResponse={formErrors}/>}
         </div>
     );
 };

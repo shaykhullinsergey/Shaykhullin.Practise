@@ -19,7 +19,8 @@
     "react-scripts": "2.1.1",
     "react-transition-group": "^2.5.0",
     "redux": "^4.0.1",
-    "remarkable": "^1.7.1"
+    "remarkable": "^1.7.1",
+    "uuid": "latest"
   },
   "scripts": {
     "dev": "run-p watch-css js:start",

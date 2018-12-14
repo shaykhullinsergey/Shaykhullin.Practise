@@ -1,0 +1,103 @@
+$light-blue-10: #cedaea
+$light-blue-20: #9bbce6
+$light-blue-30: #83aee5
+$light-blue-40: #659fe3
+$base-blue-50: #488edf
+$dark-blue-60: #3281df
+$dark-blue-70: #2d74da
+$dark-blue-80: #2367c8
+$dark-blue-90: #1655ab
+$dark-blue-100: #09408b
+
+$light-red-10: #f8c6cb
+$light-red-20: #f7a6a6
+$light-red-30: #f77e7e
+$base-red-40: #fa5e5b
+$dark-red-50: #f44336
+$dark-red-60: #e53935
+$dark-red-70: #d32f2f
+$dark-red-80: #c62828
+$dark-red-90: #b71c1c
+$dark-red-100: #a50b0b
+
+$light-purple-10: #ebdaee
+$light-purple-20: #e1bee7
+$light-purple-30: #ce93d8
+$light-purple-40: #ba68c8
+$base-purple-50: #ab47bc
+$dark-purple-60: #a536a8
+$dark-purple-70: #962294
+$dark-purple-80: #810f7c
+$dark-purple-90: #6e016b
+$dark-purple-100: #4d004b
+
+$light-grey-10: #fafafb
+$light-grey-20: #f4f5f6
+$light-grey-30: #e4e7ea
+$light-grey-40: #d4d8db
+$light-grey-50: #a6adb5
+$base-grey-60: #68717c
+$dark-grey-70: #1b2834
+
+$light-green-10: #aafadf
+$base-green: #16c98d
+
+$base-orange: #f4ae63
+$base-camel: #c8b58b
+
+$white: #ffffff
+$black: #000000
+
+// Using colors variables in app
+
+$text-white-color: $white
+$text-base-color: $base-grey-60
+$text-dark-color: $dark-grey-70
+$text-disabled-color: $light-grey-50
+$text-disabled-input-color: $light-grey-40
+$text-error-color: $base-red-40
+$text-success-color: $base-green
+$text-theme-color: $dark-blue-70
+
+$link-base-color: $dark-blue-70
+
+$theme-light-10-color: $light-blue-10
+$theme-light-20-color: $light-blue-20
+$theme-light-30-color: $light-blue-30
+$theme-light-50-color: $base-blue-50
+$theme-light-60-color: $dark-blue-60
+$theme-base-70-color: $dark-blue-70
+$theme-dark-80-color: $dark-blue-80
+
+.backend-error-messages
+  display: inline-table
+  margin-top: 24px
+  margin-bottom: 16px
+  padding: 16px 24px
+  box-sizing: border-box
+  border: 2px solid $base-red-40
+  border-radius: 3px
+  &__error-title
+    margin-left: -8px
+    padding-left: 32px
+    font-size: 14px
+    line-height: 1.57
+    color: $text-error-color
+    background: url('/assets/icons/error-message-icon.svg') no-repeat 0 50%
+  &__error-list
+    margin: 0
+    margin-top: 16px
+    padding: 0
+    list-style: none
+  &__error-item
+    position: relative
+    margin-bottom: 8px
+    padding-left: 10px
+    font-size: 14px
+    line-height: 1.57
+    color: $text-dark-color
+    &::before
+      position: absolute
+      top: 0
+      left: 0
+      content: '\2022'
