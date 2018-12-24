@@ -10,6 +10,11 @@ namespace Practice
 				CreateProfileRequestViewModel,
 				CreateProfileRequestValidation,
 				CreateProfileRequestValidationSection>();
+			
+			Validation<
+				TaskCompleteViewModel,
+				TaskViewModelValidation,
+				TaskViewModelValidationComponent>();
 		}
 	}
 }

@@ -17,6 +17,10 @@ namespace Practice
 			Controller<
 				QuizController,
 				QuizRouteComponent>("quizzes");
+
+			Controller<
+				TaskController,
+				TaskRouteComponent>("tasks");
 		}
 	}
 }

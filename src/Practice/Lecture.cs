@@ -14,6 +14,9 @@ namespace Practice
 
 		[Column("order")]
 		public int Order { get; set; }
+
+		[Column("is_practice")]
+		public bool IsPractice { get; set; }
 		
 		public virtual ICollection<Chapter> Chapters { get; set; }
 		public virtual ICollection<Quiz> Quizzes { get; set; }
