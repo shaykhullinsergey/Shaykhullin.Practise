@@ -14,6 +14,9 @@ namespace Practice
 		[DataMember(Name = "title")]
 		public string Title { get; set; }
 
+		[DataMember(Name = "isPractice")]
+		public bool IsPractice { get; set; }
+
 		[DataMember(Name = "chapters")]
 		public ICollection<ReadLectureChapterViewModel> Chapters { get; set; }
 		
@@ -25,6 +28,8 @@ namespace Practice
 			var lecture = await provider.GetRequiredService<ILectureService>().FirstAsync(x => x.Id == id);
 
 			Title = lecture.Title;
+
+			IsPractice = lecture.IsPractice;
 	
 			Chapters = lecture.Chapters
 				.OrderBy(x => x.Order)
