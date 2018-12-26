@@ -20,7 +20,7 @@ namespace Practice
 		{
 			Name = profile.Name;
 			Group = profile.Group;
-			
+
 			Lectures = profile.Quizzes
 				.OrderBy(x => x.Lecture.Order)
 				.Select(x => new ReadProfileLectureViewModel(x))
