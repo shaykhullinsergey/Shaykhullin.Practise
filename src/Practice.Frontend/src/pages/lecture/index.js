@@ -22,6 +22,7 @@ class Lecture extends Component {
         LecturesService.explicitlyCompletePractice(session, id)
             .then(() => AuthService.getProfile(session)
             .then((data) => {
+                console.log(data);
                 this.props.onLectureChange({...data, id});
                 this.props.onProfileInfoChange(data);
             }));

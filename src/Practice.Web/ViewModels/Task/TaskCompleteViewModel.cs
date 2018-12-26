@@ -22,7 +22,7 @@ namespace Practice
 			var lecture = await provider.GetRequiredService<ILectureService>()
 				.FirstOrDefaultAsync(l => l.Id == LectureId);
 
-			var quizResult = lecture.Quizzes.FirstOrDefault(q => q.Profile == profile);
+			var quizResult = lecture.Quizzes.FirstOrDefault(q => q.Profile == profile && q.Lecture == lecture);
 
 			if (quizResult == null)
 			{
