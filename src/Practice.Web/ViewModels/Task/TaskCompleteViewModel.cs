@@ -21,6 +21,17 @@ namespace Practice
 			
 			var lecture = await provider.GetRequiredService<ILectureService>()
 				.FirstOrDefaultAsync(l => l.Id == LectureId);
+
+			var quizResult = lecture.Quizzes.FirstOrDefault(q => q.Profile == profile);
+
+			if (quizResult == null)
+			{
+				await provider.GetRequiredService<IQuizService>()
+					.Add(new Quiz
+					{
+						Lecture = lecture, Profile = profile, Result = 5
+					});
+			}
 			
 			var nextLecture = await provider.GetRequiredService<ILectureService>()
 				.OrderBy(x => x.Order)

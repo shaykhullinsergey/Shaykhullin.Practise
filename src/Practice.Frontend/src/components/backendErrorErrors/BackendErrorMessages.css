@@ -1,0 +1,32 @@
+.backend-error-messages {
+  display: inline-table;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  border: 2px solid #fa5e5b;
+  border-radius: 3px; }
+  .backend-error-messages__error-title {
+    margin-left: -8px;
+    padding-left: 32px;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #fa5e5b;
+    background: url("/assets/icons/error-message-icon.svg") no-repeat 0 50%; }
+  .backend-error-messages__error-list {
+    margin: 0;
+    margin-top: 16px;
+    padding: 0;
+    list-style: none; }
+  .backend-error-messages__error-item {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #1b2834; }
+    .backend-error-messages__error-item::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '\2022'; }

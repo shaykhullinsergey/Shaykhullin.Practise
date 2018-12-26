@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import {connect} from "react-redux";
 import _isEmpty from 'lodash/isEmpty';
 import Remarkable from 'remarkable';
+import LecturesService from "../../services/lecturesService";
+import AuthService from "../../services/authService";
 
 const markdown = new Remarkable('full', {
     html: true,
@@ -11,9 +13,25 @@ const markdown = new Remarkable('full', {
 
 class Lecture extends Component {
     onQuiz = () => this.props.onCurrentElementChange('quiz');
+    onPractice = () => {
+        this.props.onCurrentElementChange('practice');
+
+        const session = JSON.parse(localStorage.getItem('education_recourse_session')).session;
+        LecturesService.explicitlyCompletePractice(session, this.props.lecture.id)
+            .then(() => AuthService.getProfile(session)
+            .then((data) => {
+                this.props.onProfileInfoChange(data.data);
+            }));
+    }
 
     componentDidMount() {
         window.scrollTo(0, 0);
+    }
+
+    renderButton() {
+        return this.props.lecture.isPractice
+            ? <button onClick={this.onPractice} className="button is-link">Завершить практику</button>
+            : <button onClick={this.onQuiz} className="button is-link">Пройти тест</button>;
     }
 
     render() {
@@ -23,13 +41,14 @@ class Lecture extends Component {
             ? <div className="column box has-text-centered">
                 <div className="box">
                     <h2 className="title is-4">{lecture.title}</h2>
+
                     {lecture.chapters.map((chapter) => (
                         <div key={chapter.title} className="column box">
                             <h2 className="subtitle is-5">{chapter.title}</h2>
                             <p style={{textAlign: 'left'}} dangerouslySetInnerHTML={{__html: markdown.render(chapter.text)}}></p>
                         </div>
                     ))}
-                    <button onClick={this.onQuiz} className="button is-link">Пройти тест</button>
+                    {this.renderButton()}
                 </div>
             </div>
             : null;

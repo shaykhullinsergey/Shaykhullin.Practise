@@ -4,6 +4,7 @@ import _isEmpty from 'lodash/isEmpty';
 import Lecture from "../lecture";
 import Quiz from "../quiz";
 import NotChoosenLecture from "../notChoosenLecture";
+import PracticeCompleted from "../practice";
 import AuthService from "../../services/authService";
 import PieChart from "../../components/pieChart";
 import LecturesService from "../../services/lecturesService";
@@ -52,7 +53,7 @@ class Lectures extends Component {
 
     render() {
         const {name, group, lectures, currentElement} = this.props.profile;
-        console.log(lectures)
+
         return <div style={{position: 'absolute'}} className="columns">
             <aside style={{
                 borderRight: '1px solid #303f9f',
@@ -110,6 +111,7 @@ class Lectures extends Component {
                 </ul>
             </aside>
             {currentElement === 'not-chosen' && <NotChoosenLecture/>}
+            {currentElement === 'practice' && <PracticeCompleted />}
             {currentElement === 'lecture' &&
             <Lecture {...this.props}
                      onCurrentElementChange={this.onCurrentElementChange}/>}

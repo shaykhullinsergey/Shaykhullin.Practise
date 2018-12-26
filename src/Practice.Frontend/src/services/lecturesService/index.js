@@ -18,6 +18,13 @@ class LecturesService {
             console.log(data);
             return data;
         });
+    
+    static explicitlyCompletePractice = (session, lectureId) => axios.post(
+        '/tasks/complete',
+        {lectureId},
+        {
+            params: {session}
+        })
 }
 
 export default LecturesService;
