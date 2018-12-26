@@ -1,10 +1,10 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Shelter;
 
 namespace Practice
 {
@@ -54,7 +54,7 @@ namespace Practice
 
 			return new TaskResultViewModel
 			{
-				Success = true
+				Results = Enumerable.Repeat(true, 5).ToList()
 			};
 		}
 	}
@@ -62,7 +62,7 @@ namespace Practice
 	[DataContract]
 	public class TaskResultViewModel
 	{
-		[DataMember(Name = "success")]
-		public bool Success { get; set; }
+		[DataMember(Name = "results")]
+		public ICollection<bool> Results { get; set; }
 	}
 }

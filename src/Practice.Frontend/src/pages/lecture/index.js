@@ -16,11 +16,14 @@ class Lecture extends Component {
     onPractice = () => {
         this.props.onCurrentElementChange('practice');
 
+        const {id} = this.props.lecture;
+
         const session = JSON.parse(localStorage.getItem('education_recourse_session')).session;
-        LecturesService.explicitlyCompletePractice(session, this.props.lecture.id)
+        LecturesService.explicitlyCompletePractice(session, id)
             .then(() => AuthService.getProfile(session)
             .then((data) => {
-                this.props.onProfileInfoChange(data.data);
+                this.props.onLectureChange({...data, id});
+                this.props.onProfileInfoChange(data);
             }));
     }
 
